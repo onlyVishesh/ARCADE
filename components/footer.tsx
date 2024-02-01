@@ -17,8 +17,24 @@ export default function Footer() {
     const t = locale ? locales[locale] : locales['en'];
 
     return (
-        <div className="flex text-white justify-center text-xl py-3 items-center w-full mx-auto z-50">
-            made {t.footerWith} <Image className="w-8 mb-1" height="25" width="25" src="/love.png" alt="Love" />, &nbsp; {t.footerBy} &nbsp;<a className="underline" href="" target="_blank" rel="noreferrer">{t.footerMyName}</a>
-        </div>
-    )
+      <div className="flex text-white justify-center text-xl py-3 items-center w-full mx-auto z-50">
+        made {t.footerWith}{" "}
+        <Image
+          className="w-8 mb-1"
+          height="25"
+          width="25"
+          src="/love.png"
+          alt="Love"
+        />
+        , &nbsp; {t.footerBy} &nbsp;
+        <a
+          className="underline"
+          href="https://github.com/vibhav13122003/ARCADE"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {t.footerMyName}
+        </a>
+      </div>
+    );
 }
