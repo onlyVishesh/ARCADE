@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import Square from "../../components/square";
-import de from '../../locales/de/translationDe.json'
-import en from '../../locales/en/translationEn.json';
-import fr from '../../locales/fr/translationFr.json';
-import hi from '../../locales/hi/translationHi.json';
-import ja from '../../locales/ja/translationJa.json';
-import ru from '../../locales/ru/translationRu.json';
-import { useRouter } from 'next/router';
+import de from "../../locales/de/translationDe.json";
+import en from "../../locales/en/translationEn.json";
+import fr from "../../locales/fr/translationFr.json";
+import hi from "../../locales/hi/translationHi.json";
+import ja from "../../locales/ja/translationJa.json";
+import ru from "../../locales/ru/translationRu.json";
+import { useRouter } from "next/router";
 
 const locales = { en, de, fr, hi, ja, ru };
 
@@ -33,10 +33,9 @@ function calculateWinner(squares: Player[]) {
 }
 
 function TicTacToe() {
-
   const router = useRouter();
   const { locale } = router;
-  const t = locale ? locales[locale] : locales['en'];
+  const t = locale ? locales[locale] : locales["en"];
 
   const [squares, setSquares] = useState(Array(9).fill(null));
   const [currentPlayer, setCurrentPlayer] = useState<"X" | "O">(
@@ -51,7 +50,6 @@ function TicTacToe() {
   }
 
   function setSquareValue(index: number) {
-
     const newData = squares.map((val, i) => {
       if (i === index) {
         return currentPlayer;
@@ -75,10 +73,23 @@ function TicTacToe() {
 
   return (
     <div className="h-screen flex flex-col justify-center items-center">
-      {!winner && <p className="text-white text-xl md:text-2xl py-2">{t.ticTacToeGameHey} {currentPlayer}, {t.ticTacToeYoutTurn}</p>}
-      {winner && winner !== "BOTH" && <p className="text-white text-xl md:text-2xl py-2">{t.ticTacToeGameCongratulations} {winner}</p>}
+      {!winner && (
+        <p className="text-white text-xl md:text-2xl py-2">
+          {t.ticTacToeGameHey} {currentPlayer}, {t.ticTacToeYoutTurn}
+        </p>
+      )}
+      {winner && winner !== "BOTH" && (
+        <p className="text-white text-xl md:text-2xl py-2">
+          {t.ticTacToeGameCongratulations} {winner}
+        </p>
+      )}
       {winner && winner === "BOTH" && (
-        <div className="text-white text-xl md:text-2xl py-2 flex">{t.ticTacToeGameTie},&nbsp;<p className="underline cursor-pointer" onClick={reset}>{t.ticTacToeGamePlayAgain}</p></div>
+        <div className="text-white text-xl md:text-2xl py-2 flex">
+          {t.ticTacToeGameTie},&nbsp;
+          <p className="underline cursor-pointer" onClick={reset}>
+            {t.ticTacToeGamePlayAgain}
+          </p>
+        </div>
       )}
 
       <div className="grid grid-cols-3">
@@ -96,8 +107,12 @@ function TicTacToe() {
           })}
       </div>
 
-      <button className='w-56 p-2 px-8 mt-4 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm  bg-red-50 bg-gradient-to-r from-secondary to-tertiary hover:shadow-lg' onClick={reset}>{t.ticTacToeGameReset}</button>
-
+      <button
+        className="w-56 p-2 px-8 mt-4 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm bg-red-50 bg-gradient-to-r from-purple-600 to-indigo-600 hover:shadow-lg"
+        onClick={reset}
+      >
+        {t.ticTacToeGameReset}
+      </button>
     </div>
   );
 }

@@ -1,272 +1,270 @@
-import React from 'react'
-import de from '../locales/de/translationDe.json'
-import en from '../locales/en/translationEn.json';
-import fr from '../locales/fr/translationFr.json';
-import hi from '../locales/hi/translationHi.json';
-import ja from '../locales/ja/translationJa.json';
-import ru from '../locales/ru/translationRu.json';
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
+import de from "../locales/de/translationDe.json";
+import en from "../locales/en/translationEn.json";
+import fr from "../locales/fr/translationFr.json";
+import hi from "../locales/hi/translationHi.json";
+import ja from "../locales/ja/translationJa.json";
+import ru from "../locales/ru/translationRu.json";
 
 const locales = { en, de, fr, hi, ja, ru };
 
 export default function Preloader() {
-
   const router = useRouter();
   const { locale } = router;
-  const t = locale ? locales[locale] : locales['en'];
+  const t = locale ? locales[locale] : locales["en"];
 
   return (
     <div className="preloader">
-
       <style jsx>{`
-            .preloader {
-                min-height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: #1c212e;
-                font-family: "Roboto", Arial;
-              }
-              
-              .loader {
-                --background: linear-gradient(135deg, #23c4f8, #275efe);
-                --shadow: rgba(39, 94, 254, 0.28);
-                --text: #6c7486;
-                --page: rgba(255, 255, 255, 0.36);
-                --page-fold: rgba(255, 255, 255, 0.52);
-                --duration: 3s;
-                width: 300px;
-                height: 200px;
-                position: relative;
-              }
-              .loader:before,
-              .loader:after {
-                --r: -6deg;
-                content: "";
-                position: absolute;
-                bottom: 10px;
-                width: 200px;
-                top: 80%;
-                box-shadow: 0 16px 12px var(--shadow);
-                transform: rotate(var(--r));
-              }
-              .loader:before {
-                left: 4px;
-              }
-              .loader:after {
-                --r: 6deg;
-                right: 4px;
-              }
-              .loader div {
-                width: 100%;
-                height: 100%;
-                border-radius: 13px;
-                position: relative;
-                z-index: 1;
-                perspective: 600px;
-                box-shadow: 0 4px 6px var(--shadow);
-                background-image: var(--background);
-              }
-              .loader div ul {
-                margin: 0;
-                padding: 0;
-                list-style: none;
-                position: relative;
-              }
-              .loader div ul li {
-                --r: 180deg;
-                --o: 0;
-                --c: var(--page);
-                position: absolute;
-                top: -15px;
-                left: 10px;
-                transform-origin: 100% 50%;
-                color: var(--c);
-                opacity: var(--o);
-                transform: rotateY(var(--r));
-                -webkit-animation: var(--duration) ease infinite;
-                animation: var(--duration) ease infinite;
-              }
-              .loader div ul li:nth-child(2) {
-                --c: var(--page-fold);
-                -webkit-animation-name: page-2;
-                animation-name: page-2;
-              }
-              .loader div ul li:nth-child(3) {
-                --c: var(--page-fold);
-                -webkit-animation-name: page-3;
-                animation-name: page-3;
-              }
-              .loader div ul li:nth-child(4) {
-                --c: var(--page-fold);
-                -webkit-animation-name: page-4;
-                animation-name: page-4;
-              }
-              .loader div ul li:nth-child(5) {
-                --c: var(--page-fold);
-                -webkit-animation-name: page-5;
-                animation-name: page-5;
-              }
-              .loader div ul li svg {
-                width: 140px;
-                height: 230px;
-                display: block;
-              }
-              .loader div ul li:first-child {
-                --r: 0deg;
-                --o: 1;
-              }
-              .loader div ul li:last-child {
-                --o: 1;
-              }
-              .loader span {
-                display: block;
-                left: 0;
-                right: 0;
-                top: 100%;
-                margin-top: 20px;
-                text-align: center;
-                color: var(--text);
-              }
-              
-              @-webkit-keyframes page-2 {
-                0% {
-                  transform: rotateY(180deg);
-                  opacity: 0;
-                }
-                20% {
-                  opacity: 1;
-                }
-                35%,
-                100% {
-                  opacity: 0;
-                }
-                50%,
-                100% {
-                  transform: rotateY(0deg);
-                }
-              }
-              
-              @keyframes page-2 {
-                0% {
-                  transform: rotateY(180deg);
-                  opacity: 0;
-                }
-                20% {
-                  opacity: 1;
-                }
-                35%,
-                100% {
-                  opacity: 0;
-                }
-                50%,
-                100% {
-                  transform: rotateY(0deg);
-                }
-              }
-              @-webkit-keyframes page-3 {
-                15% {
-                  transform: rotateY(180deg);
-                  opacity: 0;
-                }
-                35% {
-                  opacity: 1;
-                }
-                50%,
-                100% {
-                  opacity: 0;
-                }
-                65%,
-                100% {
-                  transform: rotateY(0deg);
-                }
-              }
-              @keyframes page-3 {
-                15% {
-                  transform: rotateY(180deg);
-                  opacity: 0;
-                }
-                35% {
-                  opacity: 1;
-                }
-                50%,
-                100% {
-                  opacity: 0;
-                }
-                65%,
-                100% {
-                  transform: rotateY(0deg);
-                }
-              }
-              @-webkit-keyframes page-4 {
-                30% {
-                  transform: rotateY(180deg);
-                  opacity: 0;
-                }
-                50% {
-                  opacity: 1;
-                }
-                65%,
-                100% {
-                  opacity: 0;
-                }
-                80%,
-                100% {
-                  transform: rotateY(0deg);
-                }
-              }
-              @keyframes page-4 {
-                30% {
-                  transform: rotateY(180deg);
-                  opacity: 0;
-                }
-                50% {
-                  opacity: 1;
-                }
-                65%,
-                100% {
-                  opacity: 0;
-                }
-                80%,
-                100% {
-                  transform: rotateY(0deg);
-                }
-              }
-              @-webkit-keyframes page-5 {
-                45% {
-                  transform: rotateY(180deg);
-                  opacity: 0;
-                }
-                65% {
-                  opacity: 1;
-                }
-                80%,
-                100% {
-                  opacity: 0;
-                }
-                95%,
-                100% {
-                  transform: rotateY(0deg);
-                }
-              }
-              @keyframes page-5 {
-                45% {
-                  transform: rotateY(180deg);
-                  opacity: 0;
-                }
-                65% {
-                  opacity: 1;
-                }
-                80%,
-                100% {
-                  opacity: 0;
-                }
-                95%,
-                100% {
-                  transform: rotateY(0deg);
-                }
-              }
-              `}</style>
+        .preloader {
+          min-height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #000000;
+          opacity: 0.9;
+          font-family: "Roboto", Arial;
+        }
+
+        .loader {
+          --background: linear-gradient(135deg, #23c4f8, #275efe);
+          --shadow: rgba(39, 94, 254, 0.28);
+          --text: #6c7486;
+          --page: rgba(255, 255, 255, 0.36);
+          --page-fold: rgba(255, 255, 255, 0.52);
+          --duration: 3s;
+          width: 300px;
+          height: 200px;
+          position: relative;
+        }
+        .loader:before,
+        .loader:after {
+          --r: -6deg;
+          content: "";
+          position: absolute;
+          bottom: 10px;
+          width: 200px;
+          top: 80%;
+          box-shadow: 0 16px 12px var(--shadow);
+          transform: rotate(var(--r));
+        }
+        .loader:before {
+          left: 4px;
+        }
+        .loader:after {
+          --r: 6deg;
+          right: 4px;
+        }
+        .loader div {
+          width: 100%;
+          height: 100%;
+          border-radius: 13px;
+          position: relative;
+          z-index: 1;
+          perspective: 600px;
+          box-shadow: 0 4px 6px var(--shadow);
+          background-image: var(--background);
+        }
+        .loader div ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          position: relative;
+        }
+        .loader div ul li {
+          --r: 180deg;
+          --o: 0;
+          --c: var(--page);
+          position: absolute;
+          top: -15px;
+          left: 10px;
+          transform-origin: 100% 50%;
+          color: var(--c);
+          opacity: var(--o);
+          transform: rotateY(var(--r));
+          -webkit-animation: var(--duration) ease infinite;
+          animation: var(--duration) ease infinite;
+        }
+        .loader div ul li:nth-child(2) {
+          --c: var(--page-fold);
+          -webkit-animation-name: page-2;
+          animation-name: page-2;
+        }
+        .loader div ul li:nth-child(3) {
+          --c: var(--page-fold);
+          -webkit-animation-name: page-3;
+          animation-name: page-3;
+        }
+        .loader div ul li:nth-child(4) {
+          --c: var(--page-fold);
+          -webkit-animation-name: page-4;
+          animation-name: page-4;
+        }
+        .loader div ul li:nth-child(5) {
+          --c: var(--page-fold);
+          -webkit-animation-name: page-5;
+          animation-name: page-5;
+        }
+        .loader div ul li svg {
+          width: 140px;
+          height: 230px;
+          display: block;
+        }
+        .loader div ul li:first-child {
+          --r: 0deg;
+          --o: 1;
+        }
+        .loader div ul li:last-child {
+          --o: 1;
+        }
+        .loader span {
+          display: block;
+          left: 0;
+          right: 0;
+          top: 100%;
+          margin-top: 20px;
+          text-align: center;
+          color: var(--text);
+        }
+
+        @-webkit-keyframes page-2 {
+          0% {
+            transform: rotateY(180deg);
+            opacity: 0;
+          }
+          20% {
+            opacity: 1;
+          }
+          35%,
+          100% {
+            opacity: 0;
+          }
+          50%,
+          100% {
+            transform: rotateY(0deg);
+          }
+        }
+
+        @keyframes page-2 {
+          0% {
+            transform: rotateY(180deg);
+            opacity: 0;
+          }
+          20% {
+            opacity: 1;
+          }
+          35%,
+          100% {
+            opacity: 0;
+          }
+          50%,
+          100% {
+            transform: rotateY(0deg);
+          }
+        }
+        @-webkit-keyframes page-3 {
+          15% {
+            transform: rotateY(180deg);
+            opacity: 0;
+          }
+          35% {
+            opacity: 1;
+          }
+          50%,
+          100% {
+            opacity: 0;
+          }
+          65%,
+          100% {
+            transform: rotateY(0deg);
+          }
+        }
+        @keyframes page-3 {
+          15% {
+            transform: rotateY(180deg);
+            opacity: 0;
+          }
+          35% {
+            opacity: 1;
+          }
+          50%,
+          100% {
+            opacity: 0;
+          }
+          65%,
+          100% {
+            transform: rotateY(0deg);
+          }
+        }
+        @-webkit-keyframes page-4 {
+          30% {
+            transform: rotateY(180deg);
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          65%,
+          100% {
+            opacity: 0;
+          }
+          80%,
+          100% {
+            transform: rotateY(0deg);
+          }
+        }
+        @keyframes page-4 {
+          30% {
+            transform: rotateY(180deg);
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          65%,
+          100% {
+            opacity: 0;
+          }
+          80%,
+          100% {
+            transform: rotateY(0deg);
+          }
+        }
+        @-webkit-keyframes page-5 {
+          45% {
+            transform: rotateY(180deg);
+            opacity: 0;
+          }
+          65% {
+            opacity: 1;
+          }
+          80%,
+          100% {
+            opacity: 0;
+          }
+          95%,
+          100% {
+            transform: rotateY(0deg);
+          }
+        }
+        @keyframes page-5 {
+          45% {
+            transform: rotateY(180deg);
+            opacity: 0;
+          }
+          65% {
+            opacity: 1;
+          }
+          80%,
+          100% {
+            opacity: 0;
+          }
+          95%,
+          100% {
+            transform: rotateY(0deg);
+          }
+        }
+      `}</style>
 
       <div className="loader">
         <div>
@@ -302,9 +300,9 @@ export default function Preloader() {
               </svg>
             </li>
           </ul>
-        </div><span>{t.preloaderLoding}</span>
+        </div>
+        <span>{t.preloaderLoding}</span>
       </div>
     </div>
-
-  )
+  );
 }

@@ -1,15 +1,15 @@
-import type { NextPage } from 'next'
-import Link from 'next/link'
-import Image from 'next/image'
 import { motion } from "framer-motion"
+import type { NextPage } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { fadeFeat, fadeLeft, fadeRight } from '../animations'
 import de from '../locales/de/translationDe.json'
-import en from '../locales/en/translationEn.json';
-import fr from '../locales/fr/translationFr.json';
-import hi from '../locales/hi/translationHi.json';
-import ja from '../locales/ja/translationJa.json';
-import ru from '../locales/ru/translationRu.json';
-import { useRouter } from 'next/router';
+import en from '../locales/en/translationEn.json'
+import fr from '../locales/fr/translationFr.json'
+import hi from '../locales/hi/translationHi.json'
+import ja from '../locales/ja/translationJa.json'
+import ru from '../locales/ru/translationRu.json'
 
 const locales = { en, de, fr, hi, ja, ru };
 const Index: NextPage = () => {
@@ -59,7 +59,7 @@ const Index: NextPage = () => {
 
           <div className="relative w-64 p-6 my-4 bg-gray-200 shadow-xl rounded-3xl">
             <div className="absolute flex items-center p-3 text-white rounded-full shadow-xl bg-gradient-to-r from-purple-600 to-indigo-600 left-4 -top-8">
-              <Image className="w-12" src="/home/3d.png" height="50" width="50" alt="3D" />
+              <Image className="w-12" src="/home/3d.webp" height="50" width="50" alt="3D" />
             </div>
             <div className="mt-8">
               <p className="my-2 text-xl font-semibold">{t.home3D}</p>
@@ -71,7 +71,7 @@ const Index: NextPage = () => {
 
           <div className="relative w-64 p-6 my-4 bg-gray-200 shadow-xl rounded-3xl">
             <div className="absolute flex items-center p-3 text-white rounded-full shadow-xl bg-gradient-to-r from-purple-600 to-indigo-600 left-4 -top-8">
-              <Image className="w-12" src="/home/AR.png" height="50" width="50" alt="AR" />
+              <Image className="w-12" src="/home/AR.webp" height="50" width="50" alt="AR" />
             </div>
             <div className="mt-8">
               <p className="my-2 text-xl font-semibold">{t.homeAR}</p>
