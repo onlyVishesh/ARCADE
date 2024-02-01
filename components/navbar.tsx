@@ -86,28 +86,28 @@ export default function Navbar() {
                   </div>
 
                   <div className="grid justify-center">
-                    <div className="inline-flex w-64 h-1 bg-indigo-500 rounded-full"></div>
+                    <div className="inline-flex w-64 h-1 bg-purple-600 rounded-full"></div>
                   </div>
 
                   <div className="grid place-items-center text-xl py-2 gap-2 w-full mb-4">
                     <Link href="/" passHref>
-                      <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center hover:bg-secondary cursor-pointer text-white">
+                      <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center hover:bg-purple-600 cursor-pointer text-white">
                         {t.navLinkHome}
                       </span>
                     </Link>
 
                     <Link href="/subject" passHref>
-                      <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center hover:bg-secondary cursor-pointer text-white">
+                      <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center hover:bg-purple-600 cursor-pointer text-white">
                         {t.navLinkSubject}
                       </span>
                     </Link>
 
                     {/* <Link href="/chatroom" passHref>
-                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center hover:bg-secondary cursor-pointer text-white">{t.navLinkChat}</span>
+                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center hover:bg-purple-600 cursor-pointer text-white">{t.navLinkChat}</span>
                                         </Link> */}
 
                     <Link href="/funzone" passHref>
-                      <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center hover:bg-secondary cursor-pointer text-white">
+                      <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center hover:bg-purple-600 cursor-pointer text-white">
                         {t.navLinkFunZone}
                       </span>
                     </Link>
@@ -133,29 +133,29 @@ export default function Navbar() {
         <div className="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto">
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full text-xl lg:items-center items-start flex flex-col lg:h-auto space-x-2 mr-12">
             <Link href="/" passHref>
-              <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-secondary cursor-pointer text-white">
+              <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-purple-600 cursor-pointer text-white">
                 {t.navLinkHome}
               </span>
             </Link>
 
             <Link href="/subject" passHref>
-              <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-secondary cursor-pointer text-white">
+              <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-purple-600 cursor-pointer text-white">
                 {t.navLinkSubject}
               </span>
             </Link>
 
             {/* <Link href="/chatroom" passHref>
-                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-secondary cursor-pointer text-white">{t.navLinkChat}</span>
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-purple-600 cursor-pointer text-white">{t.navLinkChat}</span>
                         </Link> */}
 
             <Link href="/funzone" passHref>
-              <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-secondary cursor-pointer text-white">
+              <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-purple-600 cursor-pointer text-white">
                 {t.navLinkFunZone}
               </span>
             </Link>
 
             <Link href="/contact" passHref>
-              <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-secondary cursor-pointer text-white">
+              <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-purple-600 cursor-pointer text-white">
                 {t.navLinkContact}
               </span>
             </Link>

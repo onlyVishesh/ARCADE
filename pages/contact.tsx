@@ -1,22 +1,20 @@
-import React from 'react'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import { fadeBottom } from '../animations'
-import de from '../locales/de/translationDe.json'
-import en from '../locales/en/translationEn.json';
-import fr from '../locales/fr/translationFr.json';
-import hi from '../locales/hi/translationHi.json';
-import ja from '../locales/ja/translationJa.json';
-import ru from '../locales/ru/translationRu.json';
-import { useRouter } from 'next/router';
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import { fadeBottom } from "../animations";
+import de from "../locales/de/translationDe.json";
+import en from "../locales/en/translationEn.json";
+import fr from "../locales/fr/translationFr.json";
+import hi from "../locales/hi/translationHi.json";
+import ja from "../locales/ja/translationJa.json";
+import ru from "../locales/ru/translationRu.json";
 
 const locales = { en, de, fr, hi, ja, ru };
 
 export default function Contact() {
-
   const router = useRouter();
   const { locale } = router;
-  const t = locale ? locales[locale] : locales['en'];
+  const t = locale ? locales[locale] : locales["en"];
 
   return (
     <div className="relative px-8 py-8 md:py-16 overflow-hidden text-gray-100">
@@ -92,7 +90,7 @@ export default function Contact() {
             ></textarea>
           </div>
           <div className="mt-8">
-            <button className="w-full px-4 py-3 font-bold text-white uppercase bg-indigo-500 border-b-4 border-gray-500 rounded-full hover:border-b-2 focus:border-gray-400">
+            <button className="w-full px-4 py-3 font-bold text-white uppercase bg-purple-600 border-b-4 border-gray-500 rounded-full hover:border-b-2 focus:border-gray-400">
               {t.contactFormSendMessage}
             </button>
           </div>

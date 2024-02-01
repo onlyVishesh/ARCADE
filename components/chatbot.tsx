@@ -17,10 +17,10 @@ const locales = { en, de, fr, hi, ja, ru };
 const theme = {
     background: "#F4F5F6",
     fontFamily: "Source Serif Pro",
-    headerBgColor: "#C83CB9",
+    headerBgColor: "#a600ff",
     headerFontColor: "#fff",
     headerFontSize: "18px",
-    botBubbleColor: "#4984B8",
+    botBubbleColor: "#a600ff74",
     botFontColor: "#fff",
     userBubbleColor: "#439fca",
     userFontColor: "#fff",
