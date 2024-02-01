@@ -37,11 +37,6 @@ Watch our demo video on YouTube by clicking on:
 - React-three-fiber
 - Tailwind CSS & Framer Motion
 
-## 🤝 Credits
-
-- AR: [echo3D](https://www.echo3d.co/)
-- 3D Models: [sketchfab.com](https://sketchfab.com)
-
 ## Prerequisites
 
 Ensure you have [npm](https://www.npmjs.com/get-npm) installed to run the software.
@@ -69,19 +64,21 @@ yarn dev
 
 ### Home page
 
-![Home](https://user-images.githubusercontent.com/64153988/156827440-61ca1a34-3d8d-4c51-8e57-b3eb84fe1232.png)
+![Home](https://github.com/onlyVishesh/ARCADE/assets/121187728/293407ab-238a-41ac-8096-840a551747f4)
 
 ### Select subject
 
-![Select subject](https://user-images.githubusercontent.com/64153988/156827416-20e4ba7b-04e8-4b10-bb70-2b3923426ec5.png)
+![Select subject](https://github.com/onlyVishesh/ARCADE/assets/121187728/e01b89d2-ba1f-4bb9-9fc5-4276652c022f)
 
-### Chemistry Class
+### Biology Class
 
-![chemistry](https://user-images.githubusercontent.com/64153988/156827270-dbd1d58d-a7b4-4440-8679-2fed72ac0832.png)
+![subject-biology](https://github.com/onlyVishesh/ARCADE/assets/121187728/7c5d29b6-048c-49f0-b416-abfd14c567a3)
 
-## DNA
+## Brain
 
-![dna](https://user-images.githubusercontent.com/64153988/156827288-e5bd9fee-b50c-4bff-a69f-e6260232c76d.png)
+![brain](https://github.com/onlyVishesh/ARCADE/assets/121187728/50c1f3c1-f842-473c-87ae-cfa5950604ab)
+
+<!-- 
 
 ### Click on different parts to know more
 
@@ -89,26 +86,37 @@ yarn dev
 ![Click on different parts to know more 2](https://user-images.githubusercontent.com/64153988/156827374-486e2e34-4dc8-4c6a-a4be-01bc92ff2359.png)
 ![Click on different parts to know more 3](https://user-images.githubusercontent.com/64153988/156827384-4d0dcd1e-8e08-4724-af57-7c55b8f01829.png)
 
+-->
+
 ### AR in Action
 
 ![AR in Action-uncrop](https://user-images.githubusercontent.com/64153988/156831141-2e35892c-8fad-4007-80bf-1bbca2c8205a.png)
 
 ### Fun zone
 
-![funzone](https://user-images.githubusercontent.com/64153988/156827156-5b81c283-375f-4a67-8073-be571c499e46.png)
+![games](https://github.com/onlyVishesh/ARCADE/assets/121187728/c7a7dc5d-7eb9-4aee-9a4c-275973685c28)
 
 ### Tic Tac Toe
 
-![tic-tac-toe](https://user-images.githubusercontent.com/64153988/156827135-3fea527e-dcbf-42ea-910b-05e875e15509.png)
+![tictactoe](https://github.com/onlyVishesh/ARCADE/assets/121187728/c07afe4a-3188-4fce-af55-d2199fd73c85)
 
 ### Contact
-
-![contact](https://user-images.githubusercontent.com/64153988/156827114-158da52d-00cd-428f-8cf3-f9d4ff9b0d06.png)
+![contact](https://github.com/onlyVishesh/ARCADE/assets/121187728/f73ee765-0a5f-49a8-b324-ae7c6ceb7e7e)
 
 ### Chatbot Assistant
 
-![chatbot](https://user-images.githubusercontent.com/64153988/132960370-9cf8953a-b53a-461d-97f3-8776d306a83a.png)
+![chatbot](https://github.com/onlyVishesh/ARCADE/assets/121187728/7343002a-dac1-44d9-b98e-dd31b1b022a9)
+
+### Use in different languages
+
+![languages](https://github.com/onlyVishesh/ARCADE/assets/121187728/e5d5c48a-bf1e-4c3c-8e93-f21a44184ed9)
 
 ### 404 Page not Found
 
-![404](https://user-images.githubusercontent.com/64153988/156826951-5411ca98-f867-47fc-b64e-337016515c20.png)
+![error](https://github.com/onlyVishesh/ARCADE/assets/121187728/f20e17db-5ffa-4cf5-bbc0-dfa1c727a0d9)
+
+## 🤝 Credits
+
+- Images: [Freepik](https://www.freepik.com/)
+- AR: [echo3D](https://www.echo3d.co/)
+- 3D Models: [sketchfab.com](https://sketchfab.com)
