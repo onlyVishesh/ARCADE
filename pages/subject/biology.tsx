@@ -36,39 +36,20 @@ export default function Biology() {
         variants={fadeBottom}
         initial="hidden"
         animate="visible"
-        className="flex flex-wrap flex-col-2 justify-around w-full px-16"
+        className="flex flex-wrap flex-col-2 justify-around w-full px-16 mt-8 mb-8"
       >
-        <Link href="/subject/biology/skull" passHref>
-          <motion.div variants={fadeItem} className="m-8">
-            <div className="w-72 h-72 cursor-pointer transition duration-500 transform hover:scale-105">
-              <div className="pb-8 border-4  border-purple-600 rounded-lg">
-                <Image
-                  width="480"
-                  height="280"
-                  src="/biology/skull.jpeg"
-                  alt=""
-                  className="rounded-t-md"
-                />
-              </div>
-              <div className="grid -mt-9 place-content-center mx-1 text-xl">
-                {t.HumanSkull}
-              </div>
-            </div>
-          </motion.div>
-        </Link>
-
         {bioPageInfo.map((subject) => (
           <Link
             href={`/subject/biology/${subject.BioSubject}`}
             passHref
             key={subject.Title}
           >
-            <motion.div variants={fadeItem} className="m-8">
+            <motion.div variants={fadeItem} className="ml-8 mr-8 mb-2 mt-2">
               <div className="w-72 h-72 cursor-pointer transition duration-500 transform hover:scale-105">
                 <div className="pb-8 border-4  border-purple-600 rounded-lg">
                   <Image
-                    width="480"
-                    height="280"
+                    width="540"
+                    height="320"
                     src={`/biology/${subject.ImgName}`}
                     alt=""
                     className="rounded-t-md"
@@ -81,8 +62,26 @@ export default function Biology() {
             </motion.div>
           </Link>
         ))}
+        <Link href="/subject/biology/skull" passHref>
+          <motion.div variants={fadeItem} className="ml-8 mr-8 mb-2 mt-2">
+            <div className="w-72 h-72 cursor-pointer transition duration-500 transform hover:scale-105">
+              <div className="pb-8 border-4  border-purple-600 rounded-lg">
+                <Image
+                  width="540"
+                  height="320"
+                  src="/biology/skull.jpeg"
+                  alt=""
+                  className="rounded-t-md"
+                />
+              </div>
+              <div className="grid -mt-9 place-content-center mx-1 text-xl">
+                {t.HumanSkull}
+              </div>
+            </div>
+          </motion.div>
+        </Link>
 
-        <motion.div variants={fadeItem} className="m-8">
+        <motion.div variants={fadeItem} className="ml-8 mr-8 mb-2 mt-2">
           <div className="w-72 h-52 border-4 border-purple-600 rounded-lg">
             <div className="grid place-content-center text-3xl text-center items-center align-middle h-full font-semibold ">
               {t.biologyMore}
