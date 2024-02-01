@@ -77,8 +77,8 @@ export const bioPageInfo = [
     Title: "PlantCell",
     ModelPath: "plant_cell_-_cell_structure",
     ModelDetails: "PlantCellDesc",
-    QrCodeUrl: "animalCell.png",
-    ARlink: "https://go.echoar.xyz/iJmt",
+    QrCodeUrl: "plantCell.png",
+    ARlink: "https://go.echo3d.co/rtty",
     ModelSize: "0.01",
   },
   {
