@@ -30,7 +30,12 @@ const Index: NextPage = () => {
             <p className="self-center text-xl tracking-wide text-justify">{t.homeAbout}</p>
 
             <Link href="/subject" passHref>
-              <button className='w-56 p-2 px-8 mt-4 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm  bg-red-50 bg-gradient-to-r from-secondary to-tertiary hover:shadow-lg '>{t.homeExplore}</button>
+            <button className='w-56 p-2 px-8 mt-4 text-base font-semibold tracking-wider text-white rounded-full shadow-sm bg-gradient-to-r from-purple-600 to-indigo-600 hover:shadow-lg hover:scale-110 transition-transform duration-300'>
+  {t.homeExplore}
+</button>
+
+
+
             </Link>
 
           </motion.div>
@@ -45,7 +50,7 @@ const Index: NextPage = () => {
       <motion.div variants={fadeFeat} initial="hidden" animate="visible" className="mb-12 md:mb-20 text-center">
         <h1 className="mb-4 text-4xl font-extrabold leading-10 tracking-wider title-font sm:text-5xl sm:leading-none md:text-6xl text-white">{t.homeOtherFeat}</h1>
         <div className="flex justify-center mt-2">
-          <div className="inline-flex h-1 bg-indigo-500 rounded-full w-52"></div>
+          <div className="inline-flex h-1 bg-purple-600 rounded-full w-52"></div>
         </div>
       </motion.div>
 
@@ -53,7 +58,7 @@ const Index: NextPage = () => {
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
 
           <div className="relative w-64 p-6 my-4 bg-gray-200 shadow-xl rounded-3xl">
-            <div className="absolute flex items-center p-3 text-white rounded-full shadow-xl bg-gradient-to-r from-secondary to-tertiary left-4 -top-8">
+            <div className="absolute flex items-center p-3 text-white rounded-full shadow-xl bg-gradient-to-r from-purple-600 to-indigo-600 left-4 -top-8">
               <Image className="w-12" src="/home/3d.png" height="50" width="50" alt="3D" />
             </div>
             <div className="mt-8">
@@ -65,7 +70,7 @@ const Index: NextPage = () => {
           </div>
 
           <div className="relative w-64 p-6 my-4 bg-gray-200 shadow-xl rounded-3xl">
-            <div className="absolute flex items-center p-3 text-white rounded-full shadow-xl bg-gradient-to-r from-secondary to-tertiary left-4 -top-8">
+            <div className="absolute flex items-center p-3 text-white rounded-full shadow-xl bg-gradient-to-r from-purple-600 to-indigo-600 left-4 -top-8">
               <Image className="w-12" src="/home/AR.png" height="50" width="50" alt="AR" />
             </div>
             <div className="mt-8">
@@ -77,7 +82,7 @@ const Index: NextPage = () => {
           </div>
 
           <div className="relative w-64 p-6 my-4 bg-gray-200 shadow-xl rounded-3xl">
-            <div className="absolute flex items-center p-3 text-white rounded-full shadow-xl bg-gradient-to-r from-secondary to-tertiary left-4 -top-8">
+            <div className="absolute flex items-center p-3 text-white rounded-full shadow-xl bg-gradient-to-r from-purple-600 to-indigo-600 left-4 -top-8">
               <Image className="w-12" src="/home/multilang.png" height="50" width="50" alt="MultiLang" />
             </div>
             <div className="mt-8">

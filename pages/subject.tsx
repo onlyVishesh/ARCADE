@@ -24,21 +24,21 @@ export default function Subject() {
                 <h1 className="pb-2 text-5xl text-center font-semibold tracking-wide lg:text-6xl text-white">
                     {t.subjectTitle}
                 </h1>
-                <div className="inline-flex h-1 bg-indigo-500 rounded-full w-72"></div>
+                <div className="inline-flex h-1 bg-purple-600 rounded-full w-72"></div>
             </motion.div>
 
             <motion.div variants={fadeBottom} initial="hidden" animate="visible" className="flex flex-wrap flex-col-2 justify-around w-full px-16 py-4">
                 {subjectsInfo.map((subject) => (
                     <Link href={`/subject/${subject.Title}`} passHref key={subject.Title}>
-                        <motion.div variants={fadeItem} className="pb-16 my-2 md:m-8 md:pb-24 cursor-pointer border-4 border-secondary rounded-lg">
-                            <Image src="/class/subject.jpg" height="220" width="320" alt="Subject Image" className="transition duration-500 transform hover:scale-110" />
+                        <motion.div variants={fadeItem} className="pb-16 my-2 md:m-8 md:pb-24 cursor-pointer border-4 border-purple-600 rounded-lg">
+                            <Image src={`/class/${subject.Title}.jpg`} height="220" width="320" alt="Subject Image" className="transition duration-500 transform hover:scale-110" />
                             <div className="-mt-28 md:-mt-36 text-4xl font-semibold text-white transition duration-500 transform  hover:scale-105 text-center capitalize">{t[subject.Title]}</div>
                         </motion.div>
                     </Link>
                 ))}
 
                 <motion.div variants={fadeItem} className="m-8">
-                    <div className="w-72 h-56 border-4 border-secondary rounded-lg">
+                    <div className="w-72 h-56 border-4 border-purple-600 rounded-lg">
                         <div className="grid place-content-center text-3xl text-center items-center align-middle h-full font-semibold text-white">{t.subjectMore}</div>
                     </div>
                 </motion.div>
