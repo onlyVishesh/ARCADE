@@ -39,7 +39,7 @@
   "no": "non",
   "chatbotThank": "Merci, à bientôt !",
 
-  "homeAbout": "ARCADE est une plateforme Web basée sur la réalité augmentée où les étudiants de tous horizons peuvent visiter le site et apprendre divers concepts à l'aide de modèles 3D, ce qui rend leur compréhension plus facile et plus rapide. ARCADE peut aider les étudiants à obtenir de meilleurs résultats grâce à visualisation et immersion totale dans le sujet.",
+  "homeAbout": "ARCADE (Salle de classe de réalité augmentée pour le développement académique et l'exploration.) est une plateforme Web basée sur la réalité augmentée où les étudiants de tous horizons peuvent visiter le site et apprendre divers concepts à l'aide de modèles 3D, ce qui rend leur compréhension plus facile et plus rapide. ARCADE peut aider les étudiants à obtenir de meilleurs résultats grâce à visualisation et immersion totale dans le sujet.",
   "homeExplore": "Explorer les sujets",
   "homeOtherFeat": "Autres fonctionnalités",
   "home3D": "Modèles 3D interactifs",
@@ -242,5 +242,5 @@
   "footerWith": "avec",
   "footerAnd": "et",
   "footerBy": "par",
-  "footerMyName": "Harshal Raikwar"
+  "footerMyName": "Team-Bit by Bit"
 }

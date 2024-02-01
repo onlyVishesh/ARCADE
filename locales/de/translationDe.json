@@ -39,7 +39,7 @@
   "no": "Nein",
   "chatbotThank": "Danke, wir sehen uns wieder!",
 
-  "homeAbout": "ARCADE ist eine AR-basierte Webplattform, auf der Schüler mit unterschiedlichem Hintergrund die Website besuchen und mithilfe von 3D-Modellen verschiedene Konzepte erlernen können, was ihr Verständnis einfacher und schneller macht. ARCADE kann Schülern dabei helfen, bessere Ergebnisse zu erzielen Visualisierung und vollständiges Eintauchen in die Materie.",
+  "homeAbout": "ARCADE (Augmented Reality Klaslokaal voor Academische Ontwikkeling en Verkennin) ist eine AR-basierte Webplattform, auf der Schüler mit unterschiedlichem Hintergrund die Website besuchen und mithilfe von 3D-Modellen verschiedene Konzepte erlernen können, was ihr Verständnis einfacher und schneller macht. ARCADE kann Schülern dabei helfen, bessere Ergebnisse zu erzielen Visualisierung und vollständiges Eintauchen in die Materie.",
   "homeExplore": "Themen erkunden",
   "homeOtherFeat": "Weitere Funktionen",
   "home3D": "Interaktive 3D-Modelle",
@@ -242,5 +242,5 @@
   "footerWith": "mit",
   "footerAnd": "und",
   "footerBy": "von",
-  "footerMyName": "Harshal Raikwar"
+  "footerMyName": "Team-Bit by Bit"
 }

@@ -2,7 +2,7 @@
 
 # ARCADE
 
-ARCADE is an AR-based web platform where students from any class can visit the site and learn various concepts with the help of 3D Models, which makes their understanding easier, and faster. ARCADE can help students achieve better results through visualization and full immersion in the subject matter.
+ARCADE is an class can visit the site and learn various concepts with the help of 3D Models, which makes their understanding easier, and faster. ARCADE can help students achieve better results through visualization and full immersion in the subject matter.
 
 ## Live demo
 
@@ -150,7 +150,7 @@ On the browser visit `http://localhost:3000` to see the demo.
 
 ## 🐛 Bug Reporting
 
-Feel free to [open an issue](https://github.com/Harshal0902/ARCADE/issues) on GitHub if you find any bug.
+Feel free to [open an issue](https://github.com/0902/ARCADE/issues) on GitHub if you find any bug.
 
 ## ⭐ Feature Request
 

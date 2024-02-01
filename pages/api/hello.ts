@@ -9,5 +9,5 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  res.status(200).json({ about: 'ARCADE, made by Harshal Raikwar' })
+  res.status(200).json({ about: 'ARCADE, made by Bit by Bit' })
 }
