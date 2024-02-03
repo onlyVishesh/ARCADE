@@ -54,7 +54,7 @@
   "biology": "Biology",
   "space": "Space",
   "aeronautics": "Aeronautics",
-  "subjectMore": "More subjects comming soon..",
+  "subjectMore": "More subjects coming soon..",
 
   "aeronauticsTitle": "Select Aircraft",
   "SpaceXDragon2": "SpaceX Dragon 2",
@@ -62,7 +62,7 @@
   "Boeing757": "Boeing 757",
   "Boeing787": "Boeing 787",
   "EurocopterEC135": "Eurocopter EC 135",
-  "aeronauticsMore": "More Aircrafts comming soon..",
+  "aeronauticsMore": "More Aircrafts coming soon..",
 
   "biologyTitle": "Select Biology Topic",
   "HumanSkull": "Human Skull",
@@ -70,7 +70,7 @@
   "PlantCell": "Plant Cell",
   "HumanBrain": "Human Brain",
   "HumanLung": "Human Lungs",
-  "biologyMore": "More topics comming soon..",
+  "biologyMore": "More topics coming soon..",
 
   "chemistryTitle": "Select Chemical Structure",
   "DNA": "DNA",
@@ -80,7 +80,7 @@
   "Glucoside": "Glucoside",
   "Glucose": "Glucose",
   "H2OMolecule": "H2O Molecule",
-  "chemistryMore": "More structures comming soon..",
+  "chemistryMore": "More structures coming soon..",
 
   "spaceTitle": "Select Planets or Space Ships",
   "perseverance": "Perseverance",
@@ -218,7 +218,7 @@
   "charroomDesc": "Ask your doubs and share your learning",
 
   "funZoneTitle": "Fun Zone",
-  "funZoneDesc": "Take a break and have some fun",
+  "funZoneDesc": "Relax your mind, let the games begun!",
 
   "funZoneGame1Title": "Tic Tac Toe Game",
   "ticTacToeGameHey": "Hey",
@@ -242,9 +242,13 @@
       "correctAnswer": "Photosynthesis"
     },
     {
-      "question":
-        "Which part of the human brain controls balance and coordination?",
-      "options": ["Cerebrum", "Cerebellum", "Medulla Oblongata", "Hypothalamus"],
+      "question": "Which part of the human brain controls balance and coordination?",
+      "options": [
+        "Cerebrum",
+        "Cerebellum",
+        "Medulla Oblongata",
+        "Hypothalamus"
+      ],
       "correctAnswer": "Cerebellum"
     },
     {
@@ -258,14 +262,18 @@
       "correctAnswer": "O"
     },
     {
-      "question":
-        "In humans, what is the normal body temperature in degrees Celsius?",
+      "question": "In humans, what is the normal body temperature in degrees Celsius?",
       "options": ["36.5", "37.0", "37.5", "38.0"],
       "correctAnswer": "37.0"
     },
     {
       "question": "What is the powerhouse of the cell?",
-      "options": ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum"],
+      "options": [
+        "Nucleus",
+        "Mitochondria",
+        "Ribosome",
+        "Endoplasmic Reticulum"
+      ],
       "correctAnswer": "Mitochondria"
     },
     {
@@ -299,8 +307,7 @@
       "correctAnswer": "Na"
     },
     {
-      "question":
-        "What is the process of converting a solid directly into a gas called?",
+      "question": "What is the process of converting a solid directly into a gas called?",
       "options": ["Sublimation", "Condensation", "Evaporation", "Vaporization"],
       "correctAnswer": "Sublimation"
     },
@@ -315,8 +322,7 @@
       "correctAnswer": "CH3"
     },
     {
-      "question":
-        "What is the process of combining elements to form a new substance?",
+      "question": "What is the process of combining elements to form a new substance?",
       "options": ["Fusion", "Fission", "Chemical Reaction", "Ionization"],
       "correctAnswer": "Chemical Reaction"
     },
@@ -346,8 +352,7 @@
       "correctAnswer": "H2O"
     },
     {
-      "question":
-        "Which planet is known as the 'Morning Star' or 'Evening Star'?",
+      "question": "Which planet is known as the 'Morning Star' or 'Evening Star'?",
       "options": ["Mercury", "Venus", "Mars", "Jupiter"],
       "correctAnswer": "Venus"
     },
@@ -362,8 +367,7 @@
       "correctAnswer": "Jupiter"
     },
     {
-      "question":
-        "What is the name of the first artificial satellite launched into space?",
+      "question": "What is the name of the first artificial satellite launched into space?",
       "options": ["Sputnik 1", "Apollo 11", "Vostok 1", "Explorer 1"],
       "correctAnswer": "Sputnik 1"
     },
@@ -412,8 +416,9 @@
   "quizGameIncorrectQuestionsSolution": "Incorrect Questions Solution",
   "quizGameYourAnswer": "Your Answer",
   "quizGameCorrectAnswer": "Correct Answer",
-
   "quizGamePlayAgain": "Play Again!",
+
+  "funZoneMore": "More Games coming soon..",
 
   "contactTilte": "Lets talk about everything!",
   "contactHateEmail": "Hate forms? Send an",

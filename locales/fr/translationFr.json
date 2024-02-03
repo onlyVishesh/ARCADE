@@ -218,7 +218,7 @@
   "charroomDesc": "Posez vos questions et partagez vos connaissances",
 
   "funZoneTitle": "Zone de divertissement",
-  "funZoneDesc": "Prenez une pause et amusez-vous",
+  "funZoneDesc": "Détendez votre esprit, que les jeux commencent !",
 
   "funZoneGame1Title": "Jeu de Morpion",
   "ticTacToeGameHey": "Salut",
@@ -412,8 +412,10 @@
   "quizGameIncorrectQuestionsSolution": "Solution des questions incorrectes",
   "quizGameYourAnswer": "Votre réponse",
   "quizGameCorrectAnswer": "Réponse correcte",
-
   "quizGamePlayAgain": "Jouer à nouveau !",
+
+  "funZoneMore": "Plus de jeux bientôt disponibles..",
+
 
   "contactTilte": "Parlons de tout !",
   "contactHateEmail": "Vous n'aimez pas les formulaires ? Envoyez un",

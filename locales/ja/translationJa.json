@@ -218,7 +218,7 @@
   "charroomDesc": "質問をし、学んだことを共有しましょう",
 
   "funZoneTitle": "楽しいゾーン",
-  "funZoneDesc": "休憩を取って楽しんでください",
+  "funZoneDesc": "心をリラックスさせ、ゲームを始めましょう！",
 
   "funZoneGame1Title": "○×ゲーム",
   "ticTacToeGameHey": "こんにちは",
@@ -401,8 +401,10 @@
   "quizGameIncorrectQuestionsSolution": "不正確な質問の解決策",
   "quizGameYourAnswer": "あなたの回答",
   "quizGameCorrectAnswer": "正しい回答",
-
   "quizGamePlayAgain": "もう一度プレイ！",
+
+  "funZoneMore": "もっとゲームが近日登場します..",
+
 
   "contactTilte": "何でも話しましょう！",
   "contactHateEmail": "フォームが嫌いですか？",

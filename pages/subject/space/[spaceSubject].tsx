@@ -99,6 +99,10 @@ export default function SpaceSubject() {
                 hasEventListener={undefined}
                 removeEventListener={undefined}
                 dispatchEvent={undefined}
+                autoRotate // Enable auto rotation
+                autoRotateSpeed={1.0} // Set rotation speed (adjust as needed)
+                enableZoom={true} // Disable zoom (optional)
+                enablePan={false} // Disable pan (optional)
               />
             </Canvas>
           </div>
