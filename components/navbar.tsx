@@ -1,14 +1,14 @@
-import React, { useState } from "react";
 import Link from "next/link";
-import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 import Headroom from "react-headroom";
+import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 import de from "../locales/de/translationDe.json";
 import en from "../locales/en/translationEn.json";
 import fr from "../locales/fr/translationFr.json";
 import hi from "../locales/hi/translationHi.json";
 import ja from "../locales/ja/translationJa.json";
 import ru from "../locales/ru/translationRu.json";
-import { useRouter } from "next/router";
 
 const locales = { en, de, fr, hi, ja, ru };
 
@@ -28,7 +28,7 @@ export default function Navbar() {
   };
 
   return (
-    <Headroom className="fixed z-50 w-full">
+    <Headroom className="fixed z-50 w-full" disable>
       <nav className="flex items-center bg-primary py-2 flex-wrap px-4 tracking-wider">
         <Link href="/" passHref>
           <span className="p-2 mr-4 inline-flex items-center text-4xl md:text-5xl cursor-pointer font-base text-white">

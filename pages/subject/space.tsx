@@ -43,8 +43,8 @@ export default function Space() {
             <div className="w-72 h-72 cursor-pointer transition duration-500 transform hover:scale-105">
               <div className="pb-8 border-4  border-purple-600 rounded-lg">
                 <Image
-                  width="480"
-                  height="280"
+                  width="540"
+                  height="320"
                   src="/space/perseveranceImg.jpg"
                   alt=""
                   className="rounded-t-md"
@@ -62,9 +62,9 @@ export default function Space() {
             <div className="w-72 h-72 cursor-pointer transition duration-500 transform hover:scale-105">
               <div className="pb-8 border-4  border-purple-600 rounded-lg">
                 <Image
-                  width="480"
-                  height="280"
-                  src="/space/solarSystemImg.jpeg"
+                  width="540"
+                  height="320"
+                  src="/space/solarSystemImg.webp"
                   alt=""
                   className="rounded-t-md"
                 />
@@ -86,8 +86,8 @@ export default function Space() {
               <div className="w-72 h-72 cursor-pointer transition duration-500 transform hover:scale-105">
                 <div className="pb-8 border-4  border-purple-600 rounded-lg">
                   <Image
-                    width="480"
-                    height="280"
+                    width="540"
+                    height="320"
                     src={`/space/${subject.ImgName}`}
                     alt=""
                     className="rounded-t-md bg-gray-600"

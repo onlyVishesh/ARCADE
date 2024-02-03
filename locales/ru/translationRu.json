@@ -218,7 +218,7 @@
   "charroomDesc": "Задайте свои вопросы и поделитесь своими знаниями",
 
   "funZoneTitle": "Зона развлечений",
-  "funZoneDesc": "Сделайте перерыв и повеселитесь",
+  "funZoneDesc": "Расслабь свой разум, пусть игры начнутся!",
 
   "funZoneGame1Title": "Игра в крестики-нолики",
   "ticTacToeGameHey": "Привет",
@@ -406,8 +406,8 @@
   "quizGameIncorrectQuestionsSolution": "Неверное решение вопросов",
   "quizGameYourAnswer": "Ваш ответ",
   "quizGameCorrectAnswer": "Правильный ответ",
-
   "quizGamePlayAgain": "Играть снова!",
+  "funZoneMore": "Скоро будут новые игры..",
 
   "contactTilte": "Давайте говорить обо всем!",
   "contactHateEmail": "Не любите формы? Отправьте",

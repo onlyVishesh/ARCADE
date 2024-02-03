@@ -218,7 +218,7 @@
   "charroomDesc": "Stelle deine Fragen und teile dein Wissen",
 
   "funZoneTitle": "Spaßzone",
-  "funZoneDesc": "Mach eine Pause und hab Spaß",
+  "funZoneDesc": "Entspanne deinen Geist, lass die Spiele beginnen!",
 
   "funZoneGame1Title": "Tic Tac Toe Spiel",
   "ticTacToeGameHey": "Hey",
@@ -421,8 +421,9 @@
   "quizGameIncorrectQuestionsSolution": "Falsche Fragen Lösung",
   "quizGameYourAnswer": "Ihre Antwort",
   "quizGameCorrectAnswer": "Richtige Antwort",
-
   "quizGamePlayAgain": "Nochmal spielen!",
+
+  "funZoneMore": "Weitere Spiele kommen bald..",
 
   "contactTilte": "Lass uns über alles reden!",
   "contactHateEmail": "Magst du keine Formulare? Schick uns eine",

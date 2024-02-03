@@ -52,6 +52,28 @@ export default function Funzone() {
           animate="visible"
           className="flex flex-wrap justify-around px-2"
         >
+          <Link href="/funzone/quiz" passHref>
+            <motion.div variants={fadeItem} className="m-8">
+              <div className="cursor-pointer transition duration-500 transform hover:scale-105 border-4 bg-gray-200 border-purple-600 rounded-lg">
+                <Image
+                  src="/funZone/quiz.jpg"
+                  height="300"
+                  width="300"
+                  alt="Quiz"
+                />
+                <div className="grid place-content-center mx-1 text-2xl font-semibold text-gray-900">
+                  {t.funZoneGame2Title}
+                </div>
+              </div>
+            </motion.div>
+          </Link>
+        </motion.div>
+        <motion.div
+          variants={fadeBottom}
+          initial="hidden"
+          animate="visible"
+          className="flex flex-wrap justify-around px-2"
+        >
           <Link href="/funzone/ticTacToe" passHref>
             <motion.div variants={fadeItem} className="m-8">
               <div className="cursor-pointer transition duration-500 transform hover:scale-105 border-4 bg-gray-200 border-purple-600 rounded-lg">
@@ -74,21 +96,13 @@ export default function Funzone() {
           animate="visible"
           className="flex flex-wrap justify-around px-2"
         >
-          <Link href="/funzone/quiz" passHref>
-            <motion.div variants={fadeItem} className="m-8">
-              <div className="cursor-pointer transition duration-500 transform hover:scale-105 border-4 bg-gray-200 border-purple-600 rounded-lg">
-                <Image
-                  src="/funZone/quiz.jpg"
-                  height="300"
-                  width="300"
-                  alt="Quiz"
-                />
-                <div className="grid place-content-center mx-1 text-2xl font-semibold text-gray-900">
-                  {t.funZoneGame2Title}
-                </div>
+          <motion.div variants={fadeItem} className="m-8">
+            <div className="w-72 h-full border-4 text-white border-purple-600 rounded-lg">
+              <div className="grid place-content-center text-3xl text-center items-center align-middle h-full font-semibold">
+                {t.funZoneMore}
               </div>
-            </motion.div>
-          </Link>
+            </div>
+          </motion.div>
         </motion.div>
       </motion.div>
     </div>
