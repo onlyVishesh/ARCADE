@@ -219,13 +219,201 @@
 
   "funZoneTitle": "Zone de divertissement",
   "funZoneDesc": "Prenez une pause et amusez-vous",
-  "funZoneGameTitle": "Jeu de Morpion",
+
+  "funZoneGame1Title": "Jeu de Morpion",
   "ticTacToeGameHey": "Salut",
   "ticTacToeYoutTurn": "C'est à vous de jouer",
   "ticTacToeGameCongratulations": "Félicitations",
   "ticTacToeGameTie": "C'est une égalité",
   "ticTacToeGamePlayAgain": "Jouer à nouveau !",
   "ticTacToeGameReset": "Réinitialiser",
+
+  "funZoneGame2Title": "questionnaire Morpion",
+  "quizGameQuestion": "Question",
+  "quizQuestions": [
+    {
+      "question": "Quel est le processus par lequel les plantes fabriquent leur propre nourriture?",
+      "options": [
+        "Photosynthèse",
+        "Respiration",
+        "Transpiration",
+        "Fermentation"
+      ],
+      "correctAnswer": "Photosynthèse"
+    },
+    {
+      "question":
+        "Quelle partie du cerveau humain contrôle l'équilibre et la coordination?",
+      "options": ["Cerveau", "Cervelet", "Moelle allongée", "Hypothalamus"],
+      "correctAnswer": "Cervelet"
+    },
+    {
+      "question": "Quelle est la plus petite unité de vie?",
+      "options": ["Cellule", "Atome", "Molécule", "Organe"],
+      "correctAnswer": "Cellule"
+    },
+    {
+      "question": "Quel groupe sanguin est connu comme le donneur universel?",
+      "options": ["A", "B", "AB", "O"],
+      "correctAnswer": "O"
+    },
+    {
+      "question":
+        "Chez l'homme, quelle est la température corporelle normale en degrés Celsius?",
+      "options": ["36.5", "37.0", "37.5", "38.0"],
+      "correctAnswer": "37.0"
+    },
+    {
+      "question": "Quelle est la centrale électrique de la cellule?",
+      "options": ["Noyau", "Mitochondries", "Ribosome", "Réticulum endoplasmique"],
+      "correctAnswer": "Mitochondries"
+    },
+    {
+      "question": "Quel gaz est essentiel à la photosynthèse?",
+      "options": ["Oxygène", "Dioxyde de carbone", "Hydrogène", "Azote"],
+      "correctAnswer": "Dioxyde de carbone"
+    },
+    {
+      "question": "Quelle est la fonction des mitochondries?",
+      "options": [
+        "Synthèse des protéines",
+        "Production d'énergie",
+        "Respiration cellulaire",
+        "Division cellulaire"
+      ],
+      "correctAnswer": "Production d'énergie"
+    },
+    {
+      "question": "Quel organe produit l'insuline?",
+      "options": ["Foie", "Pancréas", "Rein", "Estomac"],
+      "correctAnswer": "Pancréas"
+    },
+    {
+      "question": "Quel est le plus grand organe du corps humain?",
+      "options": ["Cerveau", "Cœur", "Peau", "Poumons"],
+      "correctAnswer": "Peau"
+    },
+    {
+      "question": "Quel est le symbole chimique du sodium?",
+      "options": ["Na", "Ni", "Ne", "No"],
+      "correctAnswer": "Na"
+    },
+    {
+      "question":
+        "Quel est le processus de conversion d'un solide directement en gaz appelé?",
+      "options": ["Sublimation", "Condensation", "Évaporation", "Vaporisation"],
+      "correctAnswer": "Sublimation"
+    },
+    {
+      "question": "Quel gaz est connu sous le nom de 'gaz hilarant'?",
+      "options": ["Oxygène", "Protoxyde d'azote", "Dioxyde de carbone", "Hélium"],
+      "correctAnswer": "Protoxyde d'azote"
+    },
+    {
+      "question": "Quelle est la formule chimique du méthane?",
+      "options": ["CH3", "CO2", "H2O", "N2"],
+      "correctAnswer": "CH3"
+    },
+    {
+      "question":
+        "Quel est le processus de combinaison d'éléments pour former une nouvelle substance?",
+      "options": ["Fusion", "Fission", "Réaction chimique", "Ionisation"],
+      "correctAnswer": "Réaction chimique"
+    },
+    {
+      "question": "Quel est le symbole chimique de l'or?",
+      "options": ["Au", "Ag", "Fe", "Hg"],
+      "correctAnswer": "Au"
+    },
+    {
+      "question": "Quel élément est un gaz noble?",
+      "options": ["Oxygène", "Hélium", "Azote", "Hydrogène"],
+      "correctAnswer": "Hélium"
+    },
+    {
+      "question": "Quel est le pH d'une solution neutre?",
+      "options": ["5", "7", "10", "14"],
+      "correctAnswer": "7"
+    },
+    {
+      "question": "Quel gaz constitue la majorité de l'atmosphère terrestre?",
+      "options": ["Oxygène", "Dioxyde de carbone", "Azote", "Méthane"],
+      "correctAnswer": "Azote"
+    },
+    {
+      "question": "Quelle est la formule chimique de l'eau?",
+      "options": ["CO2", "H2O", "CH4", "O2"],
+      "correctAnswer": "H2O"
+    },
+    {
+      "question":
+        "Quelle planète est connue sous le nom d' 'Étoile du matin' ou 'Étoile du soir'?",
+      "options": ["Mercure", "Vénus", "Mars", "Jupiter"],
+      "correctAnswer": "Vénus"
+    },
+    {
+      "question": "Quelle est la Grande Tache Rouge sur Jupiter?",
+      "options": ["Un ouragan", "Un volcan", "Une tempête géante", "Un désert"],
+      "correctAnswer": "Une tempête géante"
+    },
+    {
+      "question": "Quelle planète a le plus de lunes dans notre système solaire?",
+      "options": ["Saturne", "Jupiter", "Neptune", "Uranus"],
+      "correctAnswer": "Jupiter"
+    },
+    {
+      "question":
+        "Comment s'appelle le premier satellite artificiel lancé dans l'espace?",
+      "options": ["Spoutnik 1", "Apollo 11", "Vostok 1", "Explorer 1"],
+      "correctAnswer": "Spoutnik 1"
+    },
+    {
+      "question": "Qu'est-ce qu'un trou noir?",
+      "options": [
+        "Un trou dans l'espace",
+        "Une étoile",
+        "Une galaxie",
+        "Une région de l'espace-temps"
+      ],
+      "correctAnswer": "Une région de l'espace-temps"
+    },
+    {
+      "question": "Quelle planète est connue comme la Planète Rouge?",
+      "options": ["Vénus", "Jupiter", "Mars", "Saturne"],
+      "correctAnswer": "Mars"
+    },
+    {
+      "question": "Quelle est la plus grande planète de notre système solaire?",
+      "options": ["Terre", "Jupiter", "Saturne", "Neptune"],
+      "correctAnswer": "Jupiter"
+    },
+    {
+      "question": "Quelle lune est connue pour avoir une atmosphère dense?",
+      "options": ["Io", "Europe", "Titan", "Phobos"],
+      "correctAnswer": "Titan"
+    },
+    {
+      "question": "Comment s'appelle la galaxie la plus proche de la Voie lactée?",
+      "options": ["Andromède", "Triangulum", "Whirlpool", "Sombrero"],
+      "correctAnswer": "Andromède"
+    },
+    {
+      "question": "Qu'est-ce qu'une année-lumière?",
+      "options": [
+        "Une unité de temps",
+        "Une unité de vitesse",
+        "Une unité de distance",
+        "Une unité de luminosité"
+      ],
+      "correctAnswer": "Une unité de distance"
+    }
+  ],
+  "quizGameTotalScore": "Votre Score Total",
+  "quizGameIncorrectQuestionsSolution": "Solution des questions incorrectes",
+  "quizGameYourAnswer": "Votre réponse",
+  "quizGameCorrectAnswer": "Réponse correcte",
+
+  "quizGamePlayAgain": "Jouer à nouveau !",
 
   "contactTilte": "Parlons de tout !",
   "contactHateEmail": "Vous n'aimez pas les formulaires ? Envoyez un",
