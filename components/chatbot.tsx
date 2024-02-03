@@ -210,7 +210,12 @@ function Chatbot() {
           opened={opened}
           headerTitle={t.botName}
           botAvatar="/chatbot.png"
-          avatarStyle={{ borderRadius: "100%" }}
+          avatarStyle={{
+            borderRadius: "100%",
+            border: "3px solid #6F5DE0",
+            width: "50px",
+            height: "50px",
+          }}
           floating={true}
           floatingIcon={
             <Image
@@ -218,7 +223,7 @@ function Chatbot() {
               height="120"
               width="120"
               alt="chatBot icon"
-              className="rounded-full"
+              className="rounded-full !border-4 !border-solid !border-purple-600 "
             />
           }
           floatingStyle={{
