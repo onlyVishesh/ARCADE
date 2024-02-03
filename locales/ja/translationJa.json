@@ -219,13 +219,190 @@
 
   "funZoneTitle": "楽しいゾーン",
   "funZoneDesc": "休憩を取って楽しんでください",
-  "funZoneGameTitle": "○×ゲーム",
+
+  "funZoneGame1Title": "○×ゲーム",
   "ticTacToeGameHey": "こんにちは",
   "ticTacToeYoutTurn": "あなたの番です",
   "ticTacToeGameCongratulations": "おめでとうございます",
   "ticTacToeGameTie": "引き分けです",
   "ticTacToeGamePlayAgain": "もう一度プレイ！",
   "ticTacToeGameReset": "リセット",
+
+  "funZoneGame2Title": "クイズゲーム",
+  "quizGameQuestion": "質問",
+  "quizQuestions": [
+    {
+      "question": "植物が自分自身の食物を作る過程は何ですか？",
+      "options": ["光合成", "呼吸", "蒸散", "発酵"],
+      "correctAnswer": "光合成"
+    },
+    {
+      "question": "人間の脳のどの部分がバランスと調整を制御していますか？",
+      "options": ["大脳", "小脳", "延髄", "視床"],
+      "correctAnswer": "小脳"
+    },
+    {
+      "question": "生命の最小単位は何ですか？",
+      "options": ["細胞", "原子", "分子", "器官"],
+      "correctAnswer": "細胞"
+    },
+    {
+      "question": "どの血液型が普遍のドナーとして知られていますか？",
+      "options": ["A", "B", "AB", "O"],
+      "correctAnswer": "O"
+    },
+    {
+      "question": "人間の正常な体温は摂氏何度ですか？",
+      "options": ["36.5", "37.0", "37.5", "38.0"],
+      "correctAnswer": "37.0"
+    },
+    {
+      "question": "細胞の動力源は何ですか？",
+      "options": [
+        "核",
+        "ミトコンドリア",
+        "リボソーム",
+        "エンドプラズミック・レチクラム"
+      ],
+      "correctAnswer": "ミトコンドリア"
+    },
+    {
+      "question": "光合成に必要な気体は何ですか？",
+      "options": ["酸素", "二酸化炭素", "水素", "窒素"],
+      "correctAnswer": "二酸化炭素"
+    },
+    {
+      "question": "ミトコンドリアの機能は何ですか？",
+      "options": ["タンパク質合成", "エネルギー生産", "細胞呼吸", "細胞分裂"],
+      "correctAnswer": "エネルギー生産"
+    },
+    {
+      "question": "インスリンを生成するのはどの器官ですか？",
+      "options": ["肝臓", "膵臓", "腎臓", "胃"],
+      "correctAnswer": "膵臓"
+    },
+    {
+      "question": "人間の体の中で最大の器官は何ですか？",
+      "options": ["脳", "心臓", "皮膚", "肺"],
+      "correctAnswer": "皮膚"
+    },
+    {
+      "question": "ナトリウムの化学記号は何ですか？",
+      "options": ["Na", "Ni", "Ne", "No"],
+      "correctAnswer": "Na"
+    },
+    {
+      "question": "固体を直接ガスに変換する過程を何といいますか？",
+      "options": ["昇華", "凝縮", "蒸発", "気化"],
+      "correctAnswer": "昇華"
+    },
+    {
+      "question": "笑気として知られるガスは何ですか？",
+      "options": ["酸素", "亜酸化窒素", "二酸化炭素", "ヘリウム"],
+      "correctAnswer": "亜酸化窒素"
+    },
+    {
+      "question": "メタンの化学式は何ですか？",
+      "options": ["CH3", "CO2", "H2O", "N2"],
+      "correctAnswer": "CH3"
+    },
+    {
+      "question": "新しい物質を作るための元素の結合プロセスを何と呼びますか？",
+      "options": ["融合", "分裂", "化学反応", "イオン化"],
+      "correctAnswer": "化学反応"
+    },
+    {
+      "question": "金の化学記号は何ですか？",
+      "options": ["Au", "Ag", "Fe", "Hg"],
+      "correctAnswer": "Au"
+    },
+    {
+      "question": "希ガスの元素は何ですか？",
+      "options": ["酸素", "ヘリウム", "窒素", "水素"],
+      "correctAnswer": "ヘリウム"
+    },
+    {
+      "question": "中性溶液のpHは何ですか？",
+      "options": ["5", "7", "10", "14"],
+      "correctAnswer": "7"
+    },
+    {
+      "question": "地球の大気の大部分を占める気体は何ですか？",
+      "options": ["酸素", "二酸化炭素", "窒素", "メタン"],
+      "correctAnswer": "窒素"
+    },
+    {
+      "question": "水の化学式は何ですか？",
+      "options": ["CO2", "H2O", "CH4", "O2"],
+      "correctAnswer": "H2O"
+    },
+    {
+      "question": "どの惑星が 'モーニングスター' または 'イブニングスター' として知られていますか？",
+      "options": ["水星", "金星", "火星", "木星"],
+      "correctAnswer": "金星"
+    },
+    {
+      "question": "木星の '大赤斑' とは何ですか？",
+      "options": ["ハリケーン", "火山", "巨大な嵐", "砂漠"],
+      "correctAnswer": "巨大な嵐"
+    },
+    {
+      "question": "太陽系で最も多くの衛星を持つ惑星はどれですか？",
+      "options": ["土星", "木星", "海王星", "天王星"],
+      "correctAnswer": "木星"
+    },
+    {
+      "question": "宇宙に打ち上げられた最初の人工衛星の名前は何ですか？",
+      "options": [
+        "スプートニク1",
+        "アポロ11",
+        "ボストーク1",
+        "エクスプローラー1"
+      ],
+      "correctAnswer": "スプートニク1"
+    },
+    {
+      "question": "ブラックホールとは何ですか？",
+      "options": ["宇宙の穴", "恒星", "銀河", "時空の領域"],
+      "correctAnswer": "時空の領域"
+    },
+    {
+      "question": "どの惑星が 'レッドプラネット' として知られていますか？",
+      "options": ["金星", "木星", "火星", "土星"],
+      "correctAnswer": "火星"
+    },
+    {
+      "question": "太陽系で最も大きな惑星は何ですか？",
+      "options": ["地球", "木星", "土星", "海王星"],
+      "correctAnswer": "木星"
+    },
+    {
+      "question": "どの衛星が密な大気を持っていると知られていますか？",
+      "options": ["イオ", "ヨーロッパ", "タイタン", "フォボス"],
+      "correctAnswer": "タイタン"
+    },
+    {
+      "question": "ミルキーウェイ銀河に最も近い銀河の名前は何ですか？",
+      "options": [
+        "アンドロメダ",
+        "トライアングル",
+        "ワールプール",
+        "サンベレロ"
+      ],
+      "correctAnswer": "アンドロメダ"
+    },
+    {
+      "question": "光年とは何ですか？",
+      "options": ["時間の単位", "速度の単位", "距離の単位", "明るさの単位"],
+      "correctAnswer": "距離の単位"
+    }
+  ],
+  "quizGameTotalScore": "あなたの合計スコア",
+  "quizGameIncorrectQuestionsSolution": "不正確な質問の解決策",
+  "quizGameYourAnswer": "あなたの回答",
+  "quizGameCorrectAnswer": "正しい回答",
+
+  "quizGamePlayAgain": "もう一度プレイ！",
 
   "contactTilte": "何でも話しましょう！",
   "contactHateEmail": "フォームが嫌いですか？",

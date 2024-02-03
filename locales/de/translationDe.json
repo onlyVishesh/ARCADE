@@ -219,13 +219,210 @@
 
   "funZoneTitle": "Spaßzone",
   "funZoneDesc": "Mach eine Pause und hab Spaß",
-  "funZoneGameTitle": "Tic Tac Toe Spiel",
+
+  "funZoneGame1Title": "Tic Tac Toe Spiel",
   "ticTacToeGameHey": "Hey",
   "ticTacToeYoutTurn": "Du bist dran",
   "ticTacToeGameCongratulations": "Herzlichen Glückwunsch",
   "ticTacToeGameTie": "Es ist unentschieden",
   "ticTacToeGamePlayAgain": "Nochmal spielen!",
   "ticTacToeGameReset": "Zurücksetzen",
+
+  "funZoneGame2Title": "Quiz Spiel",
+  "quizGameQuestion": "Frage",
+  "quizQuestions": [
+    {
+      "question": "Was ist der Prozess, durch den Pflanzen ihr eigenes Essen herstellen?",
+      "options": ["Photosynthese", "Atmung", "Transpiration", "Gärung"],
+      "correctAnswer": "Photosynthese"
+    },
+    {
+      "question": "Welcher Teil des menschlichen Gehirns kontrolliert Gleichgewicht und Koordination?",
+      "options": [
+        "Cerebrum",
+        "Cerebellum",
+        "Medulla Oblongata",
+        "Hypothalamus"
+      ],
+      "correctAnswer": "Cerebellum"
+    },
+    {
+      "question": "Was ist die kleinste Einheit des Lebens?",
+      "options": ["Zelle", "Atom", "Molekül", "Organ"],
+      "correctAnswer": "Zelle"
+    },
+    {
+      "question": "Welche Blutgruppe gilt als Universalspender?",
+      "options": ["A", "B", "AB", "O"],
+      "correctAnswer": "O"
+    },
+    {
+      "question": "Bei Menschen, welche ist die normale Körpertemperatur in Grad Celsius?",
+      "options": ["36.5", "37.0", "37.5", "38.0"],
+      "correctAnswer": "37.0"
+    },
+    {
+      "question": "Was ist das Kraftwerk der Zelle?",
+      "options": [
+        "Zellkern",
+        "Mitochondrien",
+        "Ribosom",
+        "Endoplasmatisches Retikulum"
+      ],
+      "correctAnswer": "Mitochondrien"
+    },
+    {
+      "question": "Welches Gas ist für die Photosynthese unerlässlich?",
+      "options": [
+        "Sauerstoff",
+        "Kohlenstoffdioxid",
+        "Wasserstoff",
+        "Stickstoff"
+      ],
+      "correctAnswer": "Kohlenstoffdioxid"
+    },
+    {
+      "question": "Was ist die Funktion der Mitochondrien?",
+      "options": [
+        "Proteinsynthese",
+        "Energieproduktion",
+        "Zellatmung",
+        "Zellteilung"
+      ],
+      "correctAnswer": "Energieproduktion"
+    },
+    {
+      "question": "Welches Organ produziert Insulin?",
+      "options": ["Leber", "Bauchspeicheldrüse", "Niere", "Magen"],
+      "correctAnswer": "Bauchspeicheldrüse"
+    },
+    {
+      "question": "Was ist das größte Organ im menschlichen Körper?",
+      "options": ["Gehirn", "Herz", "Haut", "Lungen"],
+      "correctAnswer": "Haut"
+    },
+    {
+      "question": "Was ist das chemische Symbol für Natrium?",
+      "options": ["Na", "Ni", "Ne", "No"],
+      "correctAnswer": "Na"
+    },
+    {
+      "question": "Was ist der Prozess der direkten Umwandlung eines Feststoffs in ein Gas?",
+      "options": ["Sublimation", "Kondensation", "Verdunstung", "Verdampfung"],
+      "correctAnswer": "Sublimation"
+    },
+    {
+      "question": "Welches Gas wird als 'Lachgas' bezeichnet?",
+      "options": ["Sauerstoff", "Distickstoffoxid", "Kohlendioxid", "Helium"],
+      "correctAnswer": "Distickstoffoxid"
+    },
+    {
+      "question": "Was ist die chemische Formel für Methan?",
+      "options": ["CH3", "CO2", "H2O", "N2"],
+      "correctAnswer": "CH3"
+    },
+    {
+      "question": "Was ist der Prozess, bei dem Elemente kombiniert werden, um eine neue Substanz zu bilden?",
+      "options": ["Fusion", "Spaltung", "Chemische Reaktion", "Ionisation"],
+      "correctAnswer": "Chemische Reaktion"
+    },
+    {
+      "question": "Was ist das chemische Symbol für Gold?",
+      "options": ["Au", "Ag", "Fe", "Hg"],
+      "correctAnswer": "Au"
+    },
+    {
+      "question": "Welches Element ist ein Edelgas?",
+      "options": ["Sauerstoff", "Helium", "Stickstoff", "Wasserstoff"],
+      "correctAnswer": "Helium"
+    },
+    {
+      "question": "Was ist der pH-Wert einer neutralen Lösung?",
+      "options": ["5", "7", "10", "14"],
+      "correctAnswer": "7"
+    },
+    {
+      "question": "Welches Gas macht den Großteil der Erdatmosphäre aus?",
+      "options": ["Sauerstoff", "Kohlendioxid", "Stickstoff", "Methan"],
+      "correctAnswer": "Stickstoff"
+    },
+    {
+      "question": "Was ist die chemische Formel für Wasser?",
+      "options": ["CO2", "H2O", "CH4", "O2"],
+      "correctAnswer": "H2O"
+    },
+    {
+      "question": "Welcher Planet wird als 'Morgenstern' oder 'Abendstern' bezeichnet?",
+      "options": ["Merkur", "Venus", "Mars", "Jupiter"],
+      "correctAnswer": "Venus"
+    },
+    {
+      "question": "Was ist der Große Rote Fleck auf Jupiter?",
+      "options": [
+        "Ein Hurrikan",
+        "Ein Vulkan",
+        "Ein Riesensturm",
+        "Eine Wüste"
+      ],
+      "correctAnswer": "Ein Riesensturm"
+    },
+    {
+      "question": "Welcher Planet hat die meisten Monde in unserem Sonnensystem?",
+      "options": ["Saturn", "Jupiter", "Neptun", "Uranus"],
+      "correctAnswer": "Jupiter"
+    },
+    {
+      "question": "Wie lautet der Name des ersten künstlichen Satelliten, der ins All geschossen wurde?",
+      "options": ["Sputnik 1", "Apollo 11", "Wostok 1", "Explorer 1"],
+      "correctAnswer": "Sputnik 1"
+    },
+    {
+      "question": "Was ist ein Schwarzes Loch?",
+      "options": [
+        "Ein Loch im Raum",
+        "Ein Stern",
+        "Eine Galaxie",
+        "Ein Bereich von Raumzeit"
+      ],
+      "correctAnswer": "Ein Bereich von Raumzeit"
+    },
+    {
+      "question": "Welcher Planet wird als der Rote Planet bezeichnet?",
+      "options": ["Venus", "Jupiter", "Mars", "Saturn"],
+      "correctAnswer": "Mars"
+    },
+    {
+      "question": "Was ist der größte Planet in unserem Sonnensystem?",
+      "options": ["Erde", "Jupiter", "Saturn", "Neptun"],
+      "correctAnswer": "Jupiter"
+    },
+    {
+      "question": "Welcher Mond ist für seine dicke Atmosphäre bekannt?",
+      "options": ["Io", "Europa", "Titan", "Phobos"],
+      "correctAnswer": "Titan"
+    },
+    {
+      "question": "Wie heißt die nächstgelegene Galaxie zur Milchstraße?",
+      "options": ["Andromeda", "Dreieck", "Whirlpool", "Sombrero"],
+      "correctAnswer": "Andromeda"
+    },
+    {
+      "question": "Was ist ein Lichtjahr?",
+      "options": [
+        "Eine Zeiteinheit",
+        "Eine Geschwindigkeitseinheit",
+        "Eine Distanzeinheit",
+        "Eine Helligkeitseinheit"
+      ],
+      "correctAnswer": "Eine Distanzeinheit"
+    }
+  ],
+  "quizGameTotalScore": "Dein Gesamter Punktestand",
+  "quizGameIncorrectQuestionsSolution": "Falsche Fragen Lösung",
+  "quizGameYourAnswer": "Ihre Antwort",
+  "quizGameCorrectAnswer": "Richtige Antwort",
+
+  "quizGamePlayAgain": "Nochmal spielen!",
 
   "contactTilte": "Lass uns über alles reden!",
   "contactHateEmail": "Magst du keine Formulare? Schick uns eine",

@@ -219,13 +219,201 @@
 
   "funZoneTitle": "Fun Zone",
   "funZoneDesc": "Take a break and have some fun",
-  "funZoneGameTitle": "Tic Tac Toe Game",
+
+  "funZoneGame1Title": "Tic Tac Toe Game",
   "ticTacToeGameHey": "Hey",
   "ticTacToeYoutTurn": "it's your turn",
   "ticTacToeGameCongratulations": "Congratulations",
   "ticTacToeGameTie": "It's a tie",
   "ticTacToeGamePlayAgain": "Play Again!",
   "ticTacToeGameReset": "Reset",
+
+  "funZoneGame2Title": "Quiz Game",
+  "quizGameQuestion": "Question",
+  "quizQuestions": [
+    {
+      "question": "What is the process by which plants make their own food?",
+      "options": [
+        "Photosynthesis",
+        "Respiration",
+        "Transpiration",
+        "Fermentation"
+      ],
+      "correctAnswer": "Photosynthesis"
+    },
+    {
+      "question":
+        "Which part of the human brain controls balance and coordination?",
+      "options": ["Cerebrum", "Cerebellum", "Medulla Oblongata", "Hypothalamus"],
+      "correctAnswer": "Cerebellum"
+    },
+    {
+      "question": "What is the smallest unit of life?",
+      "options": ["Cell", "Atom", "Molecule", "Organ"],
+      "correctAnswer": "Cell"
+    },
+    {
+      "question": "Which blood type is known as the universal donor?",
+      "options": ["A", "B", "AB", "O"],
+      "correctAnswer": "O"
+    },
+    {
+      "question":
+        "In humans, what is the normal body temperature in degrees Celsius?",
+      "options": ["36.5", "37.0", "37.5", "38.0"],
+      "correctAnswer": "37.0"
+    },
+    {
+      "question": "What is the powerhouse of the cell?",
+      "options": ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum"],
+      "correctAnswer": "Mitochondria"
+    },
+    {
+      "question": "Which gas is essential for photosynthesis?",
+      "options": ["Oxygen", "Carbon Dioxide", "Hydrogen", "Nitrogen"],
+      "correctAnswer": "Carbon Dioxide"
+    },
+    {
+      "question": "What is the function of the mitochondria?",
+      "options": [
+        "Protein Synthesis",
+        "Energy Production",
+        "Cellular Respiration",
+        "Cell Division"
+      ],
+      "correctAnswer": "Energy Production"
+    },
+    {
+      "question": "Which organ produces insulin?",
+      "options": ["Liver", "Pancreas", "Kidney", "Stomach"],
+      "correctAnswer": "Pancreas"
+    },
+    {
+      "question": "What is the largest organ in the human body?",
+      "options": ["Brain", "Heart", "Skin", "Lungs"],
+      "correctAnswer": "Skin"
+    },
+    {
+      "question": "What is the chemical symbol for sodium?",
+      "options": ["Na", "Ni", "Ne", "No"],
+      "correctAnswer": "Na"
+    },
+    {
+      "question":
+        "What is the process of converting a solid directly into a gas called?",
+      "options": ["Sublimation", "Condensation", "Evaporation", "Vaporization"],
+      "correctAnswer": "Sublimation"
+    },
+    {
+      "question": "Which gas is known as the 'laughing gas'?",
+      "options": ["Oxygen", "Nitrous Oxide", "Carbon Dioxide", "Helium"],
+      "correctAnswer": "Nitrous Oxide"
+    },
+    {
+      "question": "What is the chemical formula for methane?",
+      "options": ["CH3", "CO2", "H2O", "N2"],
+      "correctAnswer": "CH3"
+    },
+    {
+      "question":
+        "What is the process of combining elements to form a new substance?",
+      "options": ["Fusion", "Fission", "Chemical Reaction", "Ionization"],
+      "correctAnswer": "Chemical Reaction"
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "options": ["Au", "Ag", "Fe", "Hg"],
+      "correctAnswer": "Au"
+    },
+    {
+      "question": "Which element is a noble gas?",
+      "options": ["Oxygen", "Helium", "Nitrogen", "Hydrogen"],
+      "correctAnswer": "Helium"
+    },
+    {
+      "question": "What is the pH of a neutral solution?",
+      "options": ["5", "7", "10", "14"],
+      "correctAnswer": "7"
+    },
+    {
+      "question": "Which gas makes up the majority of Earth's atmosphere?",
+      "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Methane"],
+      "correctAnswer": "Nitrogen"
+    },
+    {
+      "question": "What is the chemical formula for water?",
+      "options": ["CO2", "H2O", "CH4", "O2"],
+      "correctAnswer": "H2O"
+    },
+    {
+      "question":
+        "Which planet is known as the 'Morning Star' or 'Evening Star'?",
+      "options": ["Mercury", "Venus", "Mars", "Jupiter"],
+      "correctAnswer": "Venus"
+    },
+    {
+      "question": "What is the Great Red Spot on Jupiter?",
+      "options": ["A Hurricane", "A Volcano", "A Giant Storm", "A Desert"],
+      "correctAnswer": "A Giant Storm"
+    },
+    {
+      "question": "Which planet has the most moons in our solar system?",
+      "options": ["Saturn", "Jupiter", "Neptune", "Uranus"],
+      "correctAnswer": "Jupiter"
+    },
+    {
+      "question":
+        "What is the name of the first artificial satellite launched into space?",
+      "options": ["Sputnik 1", "Apollo 11", "Vostok 1", "Explorer 1"],
+      "correctAnswer": "Sputnik 1"
+    },
+    {
+      "question": "What is a black hole?",
+      "options": [
+        "A Hole in Space",
+        "A Star",
+        "A Galaxy",
+        "A Region of Spacetime"
+      ],
+      "correctAnswer": "A Region of Spacetime"
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["Venus", "Jupiter", "Mars", "Saturn"],
+      "correctAnswer": "Mars"
+    },
+    {
+      "question": "What is the largest planet in our solar system?",
+      "options": ["Earth", "Jupiter", "Saturn", "Neptune"],
+      "correctAnswer": "Jupiter"
+    },
+    {
+      "question": "Which moon is known for having a thick atmosphere?",
+      "options": ["Io", "Europa", "Titan", "Phobos"],
+      "correctAnswer": "Titan"
+    },
+    {
+      "question": "What is the name of the nearest galaxy to the Milky Way?",
+      "options": ["Andromeda", "Triangulum", "Whirlpool", "Sombrero"],
+      "correctAnswer": "Andromeda"
+    },
+    {
+      "question": "What is a light-year?",
+      "options": [
+        "A unit of time",
+        "A unit of speed",
+        "A unit of distance",
+        "A unit of brightness"
+      ],
+      "correctAnswer": "A unit of distance"
+    }
+  ],
+  "quizGameTotalScore": "Your Total Score",
+  "quizGameIncorrectQuestionsSolution": "Incorrect Questions Solution",
+  "quizGameYourAnswer": "Your Answer",
+  "quizGameCorrectAnswer": "Correct Answer",
+
+  "quizGamePlayAgain": "Play Again!",
 
   "contactTilte": "Lets talk about everything!",
   "contactHateEmail": "Hate forms? Send an",
