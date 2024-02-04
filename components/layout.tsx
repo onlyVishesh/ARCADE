@@ -19,7 +19,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           name="description"
           content="ARCADE is an AR-based web platform for students"
         />
-        <link rel="icon" href="/ARCADE.png" />
+        <link rel="icon" href="/ARCADE.webp" />
       </Head>
 
       {loading === false ? (

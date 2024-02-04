@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
@@ -31,9 +32,23 @@ export default function Navbar() {
     <Headroom className="fixed z-50 w-full" disable>
       <nav className="flex items-center bg-primary py-2 flex-wrap px-4 tracking-wider">
         <Link href="/" passHref>
-          <span className="p-2 mr-4 inline-flex items-center text-4xl md:text-5xl cursor-pointer font-base text-white">
-            ARCADE
-          </span>
+          <div className="cursor-pointer">
+            <Image
+              className="w-12 mx-50"
+              src="/ARCADE.webp"
+              height="50"
+              width="50"
+              alt="3D"
+            />
+            <span className="p-2 mr-4 inline-flex items-center text-4xl md:text-5xl font-base text-white">
+              <abbr
+                className="no-underline"
+                title="Augmented Reality Classroom for Academic Development and Exploration"
+              >
+                ARCADE
+              </abbr>
+            </span>
+          </div>
         </Link>
         <select
           value={selectedLocale}
