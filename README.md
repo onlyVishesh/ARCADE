@@ -12,7 +12,7 @@ Explore the project presentation [Canva PPT](https://www.canva.com/design/DAF7tV
 ## Demo video
 
 Watch our demo video on YouTube by clicking on:
-[ARCADE Demo]([https://youtu.be/_1W-z-0wnrs](https://youtu.be/xqIV6Zkmebs)
+[ARCADE Demo](https://youtu.be/xqIV6Zkmebs)
 
 ## 🚀 Main Features
 
