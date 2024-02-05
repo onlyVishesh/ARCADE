@@ -86,6 +86,7 @@
   "perseverance": "Perseverance",
   "solarSystem": "Système solaire",
   "InternationalSpaceStation": "Station spatiale internationale",
+  "Vikram": "Atterrisseur Vikram",
   "SpaceShuttleDiscovery": "Navette spatiale Discovery",
   "Mercury": "Mercure",
   "Venus": "Vénus",
@@ -204,6 +205,7 @@
   "solarSystemNeptuneDescription": "Neptune est la huitième planète solaire connue et la plus éloignée du Soleil. Dans le Système solaire, c'est la quatrième plus grande planète en diamètre, la troisième plus massive et la plus dense des géantes gazeuses. Elle a 17 fois la masse de la Terre, légèrement plus massive que son quasi-jumeau Uranus.",
 
   "InternationalSpaceStationDesc": "La Station spatiale internationale (ISS) est une station spatiale modulaire (satellite artificiel habitable) en orbite terrestre basse. Il s'agit d'un projet collaboratif multinational impliquant cinq agences spatiales participantes : NASA (États-Unis), Roscosmos (Russie), JAXA (Japon), ESA (Europe) et CSA (Canada). La propriété et l'utilisation de la station spatiale sont établies par des traités et accords intergouvernementaux. La station sert de laboratoire de recherche sur la microgravité et l'environnement spatial dans lequel la recherche scientifique est menée dans astrobiologie, astronomie, météorologie, physique et autres domaines.",
+  "VikramDesc": "Le module lunaire Vikram était responsable de l'atterrissage en douceur sur la Lune. Il a également une forme de boîte, avec quatre pattes d'atterrissage et quatre propulseurs d'atterrissage capables de produire chacun une poussée de 800 newtons. Il transportait le rover et dispose de divers instruments scientifiques pour effectuer des analyses sur place. Le module lunaire dispose de quatre moteurs à poussée variable avec des capacités de changement de taux de rotation, contrairement au module lunaire de Chandrayaan-2, qui en avait cinq, le cinquième étant monté au centre et capable uniquement d'une poussée fixe. Une des principales raisons de l'échec de l'atterrissage de Chandrayaan-2 était l'augmentation de l'altitude pendant la phase de coasting de la caméra.",
   "SpaceShuttleDiscoveryDesc": "Space Shuttle Discovery (Orbiter Vehicle Designation: OV-103) est l'un des orbiteurs du programme de la navette spatiale de la NASA et le troisième des cinq orbiteurs entièrement opérationnels à être construits. Sa première mission, STS-41-D, a volé du 30 août au 5 septembre 1984. En 27 ans de service, il a été lancé et atterri 39 fois, totalisant plus de vols spatiaux que tout autre vaisseau spatial à ce jour. Le lanceur de la navette spatiale comprend trois composants principaux : l'orbiteur de la navette spatiale, un lanceur à usage unique réservoir de carburant central et deux propulseurs de fusée à solide réutilisables.",
   "MercuryDesc": "Mercure est la plus petite planète du système solaire et la plus proche du Soleil. Son orbite autour du Soleil prend 87,97 jours terrestres, la plus courte de toutes les planètes du Soleil. Elle porte le nom du dieu romain Mercure (Mercure) , dieu du commerce, messager des dieux et médiateur entre les dieux et les mortels, correspondant au dieu grec Hermès (Ἑρμῆς). Comme Vénus, Mercure orbite autour du Soleil dans l'orbite de la Terre comme une planète inférieure, et sa distance apparente par rapport au Soleil comme vue de la Terre ne dépasse jamais 28°. Cette proximité du Soleil signifie que la planète ne peut être vue que près de l'horizon ouest après le coucher du soleil ou de l'horizon est avant le lever du soleil, généralement au crépuscule.",
   "VenusDesc": "Vénus est la deuxième planète après le Soleil. Elle doit son nom à la déesse romaine de l'amour et de la beauté. En tant qu'objet naturel le plus brillant du ciel nocturne de la Terre après la Lune, Vénus peut projeter des ombres et peut, en de rares occasions, être , visible à l'œil nu en plein jour. Vénus se trouve sur l'orbite de la Terre et ne semble donc jamais s'aventurer loin du Soleil, soit se couchant à l'ouest juste après le crépuscule, soit se levant à l'est un peu avant l'aube. Vénus orbite autour du Soleil tous les 224,7 jours terrestres. Il a une durée de jour synodique de 117 jours terrestres et une période de rotation sidérale de 243 jours terrestres.",
@@ -242,8 +244,7 @@
       "correctAnswer": "Photosynthèse"
     },
     {
-      "question":
-        "Quelle partie du cerveau humain contrôle l'équilibre et la coordination?",
+      "question": "Quelle partie du cerveau humain contrôle l'équilibre et la coordination?",
       "options": ["Cerveau", "Cervelet", "Moelle allongée", "Hypothalamus"],
       "correctAnswer": "Cervelet"
     },
@@ -258,14 +259,18 @@
       "correctAnswer": "O"
     },
     {
-      "question":
-        "Chez l'homme, quelle est la température corporelle normale en degrés Celsius?",
+      "question": "Chez l'homme, quelle est la température corporelle normale en degrés Celsius?",
       "options": ["36.5", "37.0", "37.5", "38.0"],
       "correctAnswer": "37.0"
     },
     {
       "question": "Quelle est la centrale électrique de la cellule?",
-      "options": ["Noyau", "Mitochondries", "Ribosome", "Réticulum endoplasmique"],
+      "options": [
+        "Noyau",
+        "Mitochondries",
+        "Ribosome",
+        "Réticulum endoplasmique"
+      ],
       "correctAnswer": "Mitochondries"
     },
     {
@@ -299,14 +304,18 @@
       "correctAnswer": "Na"
     },
     {
-      "question":
-        "Quel est le processus de conversion d'un solide directement en gaz appelé?",
+      "question": "Quel est le processus de conversion d'un solide directement en gaz appelé?",
       "options": ["Sublimation", "Condensation", "Évaporation", "Vaporisation"],
       "correctAnswer": "Sublimation"
     },
     {
       "question": "Quel gaz est connu sous le nom de 'gaz hilarant'?",
-      "options": ["Oxygène", "Protoxyde d'azote", "Dioxyde de carbone", "Hélium"],
+      "options": [
+        "Oxygène",
+        "Protoxyde d'azote",
+        "Dioxyde de carbone",
+        "Hélium"
+      ],
       "correctAnswer": "Protoxyde d'azote"
     },
     {
@@ -315,8 +324,7 @@
       "correctAnswer": "CH3"
     },
     {
-      "question":
-        "Quel est le processus de combinaison d'éléments pour former une nouvelle substance?",
+      "question": "Quel est le processus de combinaison d'éléments pour former une nouvelle substance?",
       "options": ["Fusion", "Fission", "Réaction chimique", "Ionisation"],
       "correctAnswer": "Réaction chimique"
     },
@@ -346,8 +354,7 @@
       "correctAnswer": "H2O"
     },
     {
-      "question":
-        "Quelle planète est connue sous le nom d' 'Étoile du matin' ou 'Étoile du soir'?",
+      "question": "Quelle planète est connue sous le nom d' 'Étoile du matin' ou 'Étoile du soir'?",
       "options": ["Mercure", "Vénus", "Mars", "Jupiter"],
       "correctAnswer": "Vénus"
     },
@@ -362,8 +369,7 @@
       "correctAnswer": "Jupiter"
     },
     {
-      "question":
-        "Comment s'appelle le premier satellite artificiel lancé dans l'espace?",
+      "question": "Comment s'appelle le premier satellite artificiel lancé dans l'espace?",
       "options": ["Spoutnik 1", "Apollo 11", "Vostok 1", "Explorer 1"],
       "correctAnswer": "Spoutnik 1"
     },
@@ -415,7 +421,6 @@
   "quizGamePlayAgain": "Jouer à nouveau !",
 
   "funZoneMore": "Plus de jeux bientôt disponibles..",
-
 
   "contactTilte": "Parlons de tout !",
   "contactHateEmail": "Vous n'aimez pas les formulaires ? Envoyez un",
