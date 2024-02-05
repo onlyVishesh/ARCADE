@@ -101,6 +101,16 @@ export const bioPageInfo = [
 
 export const spacePageInfo = [
   {
+    SpaceSubject: "vikram",
+    ImgName: "Vikram.webp",
+    Title: "Vikram",
+    ModelPath: "Vikram",
+    ModelDetails: "VikramDesc",
+    QrCodeUrl: "vikram.png",
+    ARlink: "https://go.echo3d.co/cqX6",
+    ModelSize: "0.55",
+  },
+  {
     SpaceSubject: "spaceStation",
     ImgName: "spaceStationImg.jpg",
     Title: "InternationalSpaceStation",
@@ -111,17 +121,17 @@ export const spacePageInfo = [
     ARlink: "https://go.echoar.xyz/i18a",
     ModelSize: "0.55",
   },
-  {
-    SpaceSubject: "spaceShuttle",
-    ImgName: "DiscoverySpaceShuttleImg.jpg",
-    Title: "SpaceShuttleDiscovery",
-    ModelPath: "DiscoverySpaceShuttle",
-    ModelDetails: "SpaceShuttleDiscoveryDesc",
-    QrCodeUrl:
-      "https://storage.echoar.xyz/wispy-violet-4999/828c5b27-e6ab-48c8-a9b7-07a810908dd5",
-    ARlink: "https://go.echoar.xyz/uA3y",
-    ModelSize: "0.1",
-  },
+  // {
+  //   SpaceSubject: "spaceShuttle",
+  //   ImgName: "DiscoverySpaceShuttleImg.jpg",
+  //   Title: "SpaceShuttleDiscovery",
+  //   ModelPath: "DiscoverySpaceShuttle",
+  //   ModelDetails: "SpaceShuttleDiscoveryDesc",
+  //   QrCodeUrl:
+  //     "https://storage.echoar.xyz/wispy-violet-4999/828c5b27-e6ab-48c8-a9b7-07a810908dd5",
+  //   ARlink: "https://go.echoar.xyz/uA3y",
+  //   ModelSize: "0.1",
+  // },
   {
     SpaceSubject: "mercury",
     ImgName: "Mercury.webp",
