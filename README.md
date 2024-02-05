@@ -6,13 +6,13 @@ ARCADE(Augmented Reality Classroom for Academic Development and Exploration) is 
 
 ## Live demo
 
-The site is deployed through Vercel, and you can experience it [here](http://ARCADE.vercel.app).  
-Explore the project presentation 
+<!-- The site is deployed through Vercel, and you can experience it [here](http://ARCADE.vercel.app).  -->
+Explore the project presentation [Canva PPT](https://www.canva.com/design/DAF7tVV_I5A/7fU01-kYikTy4cSg3EpNqQ/edit?utm_content=DAF7tVV_I5A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Demo video
 
 Watch our demo video on YouTube by clicking on:
-[ARCADE Demo](https://youtu.be/_1W-z-0wnrs)
+[ARCADE Demo]([https://youtu.be/_1W-z-0wnrs](https://youtu.be/xqIV6Zkmebs))
 
 ## 🚀 Main Features
 
