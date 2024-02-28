@@ -6,25 +6,28 @@ import fr from "../../locales/fr/translationFr.json";
 import hi from "../../locales/hi/translationHi.json";
 import ja from "../../locales/ja/translationJa.json";
 import ru from "../../locales/ru/translationRu.json";
+import { Locale } from "../../types"; // Assuming you have a types file with Locale interface defined
 
-const locales = { en, de, fr, hi, ja, ru };
+const locales: Record<string, Locale> = { en, de, fr, hi, ja, ru };
 
-const QuizGame = () => {
+const QuizGame: React.FC = () => {
   const router = useRouter();
   const { locale } = router;
-  const t = locale ? locales[locale] : locales["en"];
-  const [score, setScore] = useState(0);
-  const [wrongAnswers, setWrongAnswers] = useState([]);
-  const [showDetails, setShowDetails] = useState(false);
+  const t: Locale = locale ? locales[locale] : locales["en"];
+  const [score, setScore] = useState<number>(0);
+  const [wrongAnswers, setWrongAnswers] = useState<
+    { questionIndex: number; optionIndex: number }[]
+  >([]);
+  const [showDetails, setShowDetails] = useState<boolean>(false);
 
-  const [quizData, setQuizData] = useState([]);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [quizData, setQuizData] = useState<Locale["quizQuestions"]>([]);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
 
-  const shuffleOptions = (options) => {
+  const shuffleOptions = (options: string[]): string[] => {
     return options.slice().sort(() => Math.random() - 0.5);
   };
 
-  const handleAnswerClick = (selectedOption) => {
+  const handleAnswerClick = (selectedOption: string): void => {
     const currentQuestion = quizData[currentQuestionIndex];
     const isCorrect = selectedOption === currentQuestion.correctAnswer;
 
@@ -49,7 +52,7 @@ const QuizGame = () => {
     }
   };
 
-  const resetQuiz = () => {
+  const resetQuiz = (): void => {
     setCurrentQuestionIndex(0);
     setScore(0);
     setWrongAnswers([]);
@@ -57,7 +60,7 @@ const QuizGame = () => {
     generateQuiz();
   };
 
-  const generateQuiz = () => {
+  const generateQuiz = (): void => {
     // Randomly select indices to get questions
     const shuffledIndices = Array.from(
       { length: t.quizQuestions.length },
