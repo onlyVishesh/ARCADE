@@ -52,7 +52,7 @@ function Model(props: JSX.IntrinsicElements['group']) {
 
     console.log(hovered)
     return (
-        <group ref={group} {...props} dispose={null}
+        <group ref={group as React.RefObject<THREE.Group>} {...props} dispose={null}
             //@ts-ignore
             onPointerOver={(e) => (e.stopPropagation(), set(e.object.material.name))}
             onPointerOut={(e) => e.intersections.length === 0 && set(null)}

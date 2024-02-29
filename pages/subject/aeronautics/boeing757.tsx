@@ -1,19 +1,20 @@
-import Image from "next/image"
-import Link from 'next/link'
-import React, { Suspense, useRef, useState } from "react"
-import * as THREE from 'three'
-import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
-import { Canvas } from "@react-three/fiber"
-import { ContactShadows, Environment, useGLTF, OrbitControls } from "@react-three/drei"
-import { proxy, useSnapshot } from "valtio"
-import { BiArrowBack } from "react-icons/bi"
-import de from '../../../locales/de/translationDe.json'
+import { OrbitControls, useGLTF } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import Image from "next/image";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { RefObject, Suspense, useRef, useState } from "react";
+import { BiArrowBack } from "react-icons/bi";
+import * as THREE from 'three';
+import { Group, Object3DEventMap } from 'three';
+import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader';
+import { proxy, useSnapshot } from "valtio";
+import de from '../../../locales/de/translationDe.json';
 import en from '../../../locales/en/translationEn.json';
 import fr from '../../../locales/fr/translationFr.json';
 import hi from '../../../locales/hi/translationHi.json';
 import ja from '../../../locales/ja/translationJa.json';
 import ru from '../../../locales/ru/translationRu.json';
-import { useRouter } from 'next/router';
 
 const locales = { en, de, fr, hi, ja, ru };
 
@@ -137,13 +138,14 @@ function Model(props: JSX.IntrinsicElements['group']) {
 
     console.log(hovered)
     return (
-        <group ref={group} {...props} dispose={null}
+        <group ref={group as RefObject<Group<Object3DEventMap>>} {...props} dispose={null}
             //@ts-ignore
-            onPointerOver={(e) => (e.stopPropagation(), set(e.object.material.name))}
+            onPointerOver={(e) => (e.stopPropagation(), set((e.object as THREE.Mesh)?.material?.name))}
             onPointerOut={(e) => e.intersections.length === 0 && set(null)}
             onPointerMissed={() => (state.current = null)}
             //@ts-ignore
-            onPointerDown={(e) => (e.stopPropagation(), (state.current = e.object.material.name))}
+            onPointerDown={(e) => (
+                e.stopPropagation(), (state.current = null))}
         >
             <group rotation={[-Math.PI / 2, 0, 0]}>
                 <group rotation={[Math.PI / 2, 0, 0]}>

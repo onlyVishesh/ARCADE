@@ -1,13 +1,14 @@
 import { OrbitControls, useAnimations, useGLTF } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, GroupProps } from "@react-three/fiber";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Suspense, useEffect, useRef, useState } from "react";
+import { RefObject, Suspense, useEffect, useRef, useState } from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { BsFillPauseFill, BsFillPlayFill } from "react-icons/bs";
 import * as THREE from "three";
+import { Group, Object3DEventMap } from "three";
 import { GLTF } from "three/examples/jsm/loaders/GLTFLoader";
 import { proxy, useSnapshot } from "valtio";
 import { fade } from "../../../animations";
@@ -18,7 +19,12 @@ import hi from "../../../locales/hi/translationHi.json";
 import ja from "../../../locales/ja/translationJa.json";
 import ru from "../../../locales/ru/translationRu.json";
 
-const locales = { en, de, fr, hi, ja, ru };
+type ModelProps = GroupProps & {
+  isAnimationPlaying: boolean;
+  toggleAnimation: () => void;
+};
+
+const locales: { [key: string]: any } = { en, de, fr, hi, ja, ru };
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -54,47 +60,48 @@ type GLTFResult = GLTF & {
   };
 };
 
-type ActionName = "Take 001";
+type ActionName = "Take_001";
 type GLTFActions = Record<ActionName, THREE.AnimationAction>;
 
 const state = proxy({
   current: null,
 });
 
-type ModelProps = JSX.IntrinsicElements["group"];
 function Model({ isAnimationPlaying, toggleAnimation, ...props }: ModelProps) {
   const group = useRef<THREE.Group>();
-  const { nodes, materials, animations } = useGLTF(
+  const { nodes, materials, animations } = (useGLTF(
     "/biology/visible_interactive_human_-_exploding_skull/scene.gltf"
-  ) as GLTFResult;
-  const { actions } = useAnimations<GLTFActions>(animations, group);
+  ) as unknown) as GLTFResult;
+  const { actions } = useAnimations<THREE.AnimationClip>(animations, group);
   const [hovered, set] = useState(null);
 
   useEffect(() => {
-    if (isAnimationPlaying) {
-      actions["Take 001"].play();
-      actions["Take 001"].paused = false;
-    } else {
-      actions["Take 001"].paused = true;
-      // actions['Take 001'].stop();
+    if (!!actions.Take_001) {
+      if (isAnimationPlaying) {
+        actions.Take_001.play();
+        actions.Take_001.paused = false;
+      } else {
+        actions.Take_001.paused = true;
+        // actions['Take_001'].stop();
+      }
     }
   }, [isAnimationPlaying]);
 
   return (
     <group
-      ref={group}
+      ref={group as RefObject<Group<Object3DEventMap>>}
       {...props}
       dispose={null}
       //@ts-ignore
-      onPointerOver={(e) => (e.stopPropagation(), set(e.object.material.name))}
+      onPointerOver={(e) => (
+        e.stopPropagation(), set(null)
+      )}
       onPointerOut={(e) => e.intersections.length === 0 && set(null)}
       onPointerMissed={() => (state.current = null)}
       //@ts-ignore
-      onPointerDown={(e) => (
-        e.stopPropagation(), (state.current = e.object.material.name)
-      )}
+      onPointerDown={(e) => (e.stopPropagation(), (state.current = null))}
     >
-      <group name="OSG_Scene" className="cursor-pointer">
+      <group name="OSG_Scene">
         <group
           name="RootNode_(gltf_orientation_matrix)"
           rotation={[-Math.PI / 2, 0, 0]}

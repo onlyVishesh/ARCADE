@@ -1,5 +1,5 @@
 import { OrbitControls, useAnimations, useGLTF } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, GroupProps } from "@react-three/fiber";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -16,7 +16,12 @@ import hi from "../../../locales/hi/translationHi.json";
 import ja from "../../../locales/ja/translationJa.json";
 import ru from "../../../locales/ru/translationRu.json";
 
-const locales = { en, de, fr, hi, ja, ru };
+type ModelProps = GroupProps & {
+  isAnimationPlaying: boolean;
+  toggleAnimation: () => void;
+};
+
+const locales: { [key: string]: any } = { en, de, fr, hi, ja, ru };
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -44,26 +49,26 @@ type GLTFResult = GLTF & {
   };
 };
 
-type ActionName = "Animation";
-type GLTFActions = Record<ActionName, THREE.AnimationAction>;
-type ModelProps = JSX.IntrinsicElements["group"];
-
 function Model({ isAnimationPlaying, toggleAnimation, ...props }: ModelProps) {
-  const group = useRef<THREE.Group>();
-  const { nodes, materials, animations } = useGLTF(
+  const group = useRef<THREE.Group>(null!);
+  const { nodes, materials, animations } = (useGLTF(
     "/chemistry/molecular-orbital-diagram-h2/MO_diagramH2e.glb"
-  ) as GLTFResult;
-  const { actions } = useAnimations<GLTFActions>(animations, group);
+  ) as unknown) as GLTFResult;
+  const { actions } = useAnimations<THREE.AnimationClip>(animations, group);
+
+  const [hovered, set] = useState(null);
 
   useEffect(() => {
-    if (isAnimationPlaying) {
-      actions["Animation"].play();
-      actions["Animation"].paused = false;
-    } else {
-      actions["Animation"].paused = true;
-      // actions['Animation'].stop();
+    if (!!actions.Animation) {
+      if (isAnimationPlaying) {
+        actions.Animation.play();
+        actions.Animation.paused = false;
+      } else {
+        actions.Animation.paused = true;
+        // actions['Animation'].stop();
+      }
     }
-  }, [isAnimationPlaying]);
+  }, [isAnimationPlaying, actions]);
 
   return (
     <group ref={group} {...props} dispose={null}>
@@ -197,7 +202,7 @@ export default function Moh2() {
   const router = useRouter();
   const { locale } = router;
   const t = locale ? locales[locale] : locales["en"];
-  const [isAnimationPlaying, setAnimationPlaying] = useState(false);
+  const [isAnimationPlaying, setAnimationPlaying] = useState<boolean>(false);
 
   const toggleAnimation = () => {
     setAnimationPlaying((prevState) => !prevState);

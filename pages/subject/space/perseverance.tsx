@@ -1,10 +1,10 @@
 import { OrbitControls, useGLTF } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, GroupProps } from "@react-three/fiber";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Suspense, useRef, useState } from "react";
+import { Suspense, useRef, useState, useEffect, useMemo } from "react";
 import { BiArrowBack } from "react-icons/bi";
 import * as THREE from "three";
 import { GLTF } from "three/examples/jsm/loaders/GLTFLoader";
@@ -17,7 +17,12 @@ import hi from "../../../locales/hi/translationHi.json";
 import ja from "../../../locales/ja/translationJa.json";
 import ru from "../../../locales/ru/translationRu.json";
 
-const locales = { en, de, fr, hi, ja, ru };
+type ModelProps = GroupProps & {
+  isAnimationPlaying: boolean;
+  toggleAnimation: () => void;
+};
+
+const locales: { [key: string]: any } = { en, de, fr, hi, ja, ru };
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -328,25 +333,24 @@ const state = proxy({
 });
 
 function Model(props: JSX.IntrinsicElements["group"]) {
-  const group = useRef<THREE.Group>();
-  const { nodes, materials } = useGLTF(
+  const group = useRef<THREE.Group>(null!);
+  const { nodes, materials, animations } = (useGLTF(
     "/space/perseverance/scene.gltf"
-  ) as GLTFResult;
-  const [hovered, set] = useState(null);
+    ) as unknown) as GLTFResult;
+    const [hovered, set] = useState(null)
   return (
     <group
       ref={group}
       {...props}
       dispose={null}
-      //@ts-ignore
-      onPointerOver={(e) => (e.stopPropagation(), set(e.object.material.name))}
-      onPointerOut={(e) => e.intersections.length === 0 && set(null)}
-      onPointerMissed={() => (state.current = null)}
-      //@ts-ignore
-      onPointerDown={(e) => (
-        e.stopPropagation(), (state.current = e.object.material.name)
-      )}
-    >
+            //@ts-ignore
+            onPointerOver={(e) => (e.stopPropagation(), set((e.object as THREE.Mesh)?.material?.name))}
+            onPointerOut={(e) => e.intersections.length === 0 && set(null)}
+            onPointerMissed={() => (state.current = null)}
+            //@ts-ignore
+            onPointerDown={(e) => (
+                e.stopPropagation(), (state.current = null))}
+        >
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[-0.02, 1.16, 0.08]}>
