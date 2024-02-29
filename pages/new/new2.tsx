@@ -1,5 +1,5 @@
 import { OrbitControls, useAnimations, useGLTF } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, GroupProps } from "@react-three/fiber";
 import { ARButton, XR } from "@react-three/xr";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -18,7 +18,12 @@ import hi from "../../locales/hi/translationHi.json";
 import ja from "../../locales/ja/translationJa.json";
 import ru from "../../locales/ru/translationRu.json";
 
-const locales = { en, de, fr, hi, ja, ru };
+type ModelProps = GroupProps & {
+  isAnimationPlaying: boolean;
+  toggleAnimation: () => void;
+};
+
+const locales: { [key: string]: any } = { en, de, fr, hi, ja, ru };
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -62,32 +67,29 @@ type GLTFResult = GLTF & {
   };
 };
 
-type ActionName = "Animation";
-type GLTFActions = Record<ActionName, THREE.AnimationAction>;
-
 const state = proxy({
   current: null,
 });
 
-type ModelProps = JSX.IntrinsicElements["group"];
-
 function Model({ isAnimationPlaying, toggleAnimation, ...props }: ModelProps) {
-  const group = useRef<THREE.Group>();
-  const { nodes, materials, animations } = useGLTF(
+  const group = useRef<THREE.Group>(null!);
+  const { nodes, materials, animations } = (useGLTF(
     "/space/SolarSystem/solar_system_animation.glb"
-  ) as GLTFResult;
-  const { actions } = useAnimations<GLTFActions>(animations, group);
+  ) as unknown) as GLTFResult;
+  const { actions } = useAnimations<THREE.AnimationClip>(animations, group);
   const [hovered, set] = useState(null);
 
   useEffect(() => {
-    if (isAnimationPlaying) {
-      actions["Animation"].play();
-      actions["Animation"].paused = false;
-    } else {
-      actions["Animation"].paused = true;
-      // actions['Animation'].stop();
+    if (!!actions.Animation) {
+      if (isAnimationPlaying) {
+        actions.Animation.play();
+        actions.Animation.paused = false;
+      } else {
+        actions.Animation.paused = true;
+        // actions['Animation'].stop();
+      }
     }
-  }, [isAnimationPlaying]);
+  }, [isAnimationPlaying, actions]);
 
   return (
     <group
@@ -95,12 +97,12 @@ function Model({ isAnimationPlaying, toggleAnimation, ...props }: ModelProps) {
       {...props}
       dispose={null}
       //@ts-ignore
-      onPointerOver={(e) => (e.stopPropagation(), set(e.object.material.name))}
+      onPointerOver={(e) => (e.stopPropagation(), set((e.object as THREE.Mesh).material.name))}
       onPointerOut={(e) => e.intersections.length === 0 && set(null)}
       onPointerMissed={() => (state.current = null)}
       //@ts-ignore
       onPointerDown={(e) => (
-        e.stopPropagation(), (state.current = e.object.material.name)
+        e.stopPropagation(), (state.current = null)
       )}
     >
       <group name="Sketchfab_Scene">
