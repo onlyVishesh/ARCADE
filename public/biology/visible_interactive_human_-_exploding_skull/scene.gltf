@@ -1990,7 +1990,7 @@
           }
         }
       ],
-      "name": "Take 001",
+      "name": "Take_001",
       "samplers": [
         {
           "input": 75,
