@@ -8,7 +8,8 @@ ARCADE(Augmented Reality Classroom for Academic Development and Exploration) is 
 
 <!-- The site is deployed through Vercel, and you can experience it [here](http://ARCADE.vercel.app).  -->
 Explore the project presentation [Canva PPT](https://www.canva.com/design/DAF7tVV_I5A/7fU01-kYikTy4cSg3EpNqQ/edit?utm_content=DAF7tVV_I5A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-To Explore The Website [Click Here]{https://arcade-pink.vercel.app}
+
+To Explore The Website [Click Here](https://arcade-pink.vercel.app)
 
 ## Demo video
 
